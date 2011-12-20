@@ -1,0 +1,357 @@
+
+/*
+    {//
+    cout << " test using namespace testItem40 ;\n" ;
+    using namespace testItem40 ;
+    exampleFunc() ;
+        // for example Derived3
+        Derived3    d3 ;
+        d3.printDerived3() ;
+        //d3.setValue(3) ;// warning ... GUN GCC 运行期出错 ...
+        cout << " d3.setValue(3) ;//running error,in GUN GCC ,and then ... \n" ;
+        d3.setValue1(3) ;   d3.setValue2(3) ; // okokok
+        cout << " d3.setValue1(3) ;   d3.setValue2(6) ; ,and then ... " << "\n" ;
+        d3.printDerived3() ;
+        // for example Derived3_
+        Derived3_    d3_ ; //Directly Derived3_::Base() ,not Derived2_::Base() ,Derived2_::Base()
+        d3_.printDerived3_() ;
+        d3_.setValue(3) ;//
+        cout << " d3_.setValue(3) ; and then ... \n" ;
+        d3_.printDerived3_() ;
+        d3_.setValue1(6) ;//
+        cout << " d3_.setValue1(6) ; and then ... \n" ;
+        d3_.printDerived3_() ;
+        d3_.setValue2(9) ;//
+        cout << " d3_.setValue2(9) ; and then ... \n" ;
+        d3_.printDerived3_() ;
+        cout << " Above all ,So Derived3_(object) has only one Base object ,\n"
+             << " as Derived1_ ,Derived2_ virtual public : Base ...\n" ;
+    }
+/*
+    {//
+    cout << " test using namespace testItem39 ;\n" ;
+    using namespace testItem39 ;
+    testItem39::exampleFunc() ;
+    }
+/*
+    {//
+    cout << " test using namespace testItem38 ;\n" ;
+    using namespace testItem38 ;
+    Set<int>    iSet ;
+    iSet.insert(1) ;
+    iSet.insert(2) ;
+    iSet.insert(3) ;
+    iSet.insert(4) ;
+    iSet.insert(1) ;
+    cout << " iSet.insert .... \n" ;
+    cout << " iSet.size(): " << iSet.size() << "\n" ;
+    iSet.remove(4) ;
+    iSet.remove(1) ;
+    cout << " iSet.remove(4) ; iSet.remove(1) ;\n" ;
+    cout << " iSet.size(): " << iSet.size() << "\n" ;
+    cout << " iSet.member(1): " << boolalpha << iSet.member(1) << "\n" ;
+    cout << " iSet.member(2): " << iSet.member(2) << "\n" ;
+    cout << noboolalpha ;
+
+    }
+/*
+    {//
+    cout << " test using namespace testItem37 ;\n" ;
+    using namespace testItem37 ;
+    exampleFunc() ;
+    }
+/*
+    {//
+    cout << " test using namespace testItem36 ;\n" ;
+    using namespace testItem36 ;
+    exampleFunc() ;
+    }
+/*
+    {//
+    cout << " test using namespace testItem28 ;\n" ;
+    using namespace testItem28 ;
+    exampleFunc() ; // ...
+    }
+/*
+    {//
+    cout << " test using namespace testItem31 ;\n" ;
+    using namespace testItem31 ;
+    Person  hjk("huangjunkun" ,Date(6 ,7 ,1988) ,"武汉中南民族大学") ;
+    printPerson(hjk) ;
+    // ...
+    std::tr1::shared_ptr<Person_> phjs(Person_::create("huangjunsen" ,Date(11 ,15 ,1989) ,"厦门理工学院")) ;
+    printPerson(*phjs) ;
+    try
+    {
+        //Person perError("nothing" ,Date(0 ,7 ,1988) ,"") ;// month error ...
+        //Person perError("nothing" ,Date(12 ,0 ,1988) ,"") ;// month error ...
+        Person perError("nothing" ,Date(12 ,31 ,0) ,"") ;// year error ...
+    }
+    catch(exception& e)
+    {
+    	cout << " exception -- e.what(): " << e.what() << "\n" ;
+    }
+    }
+    /*
+    {//
+    cout << " test tr1::shared_ptr<Widget> pWidget(new Widget) ;// boost -> tr1 ...\n" ;
+    using testItem16::Widget ;
+    //using namespace boost ;
+    tr1::shared_ptr<Widget> pWidget(new Widget) ;
+    }
+    {//
+    cout << " test using namespace testItem30 ;\n" ;
+    using namespace testItem30 ;
+    exampleFunc() ;
+    }
+
+/*
+    {//
+    cout << " test using namespace testItem25 ;\n" ;
+    using namespace testItem25 ;
+    int     a = 1 ,b = 2 ;
+    cout << a << " , " << b << "\n" ;
+    swap(a ,b) ; // ... called from std ...
+    cout << a << " , " << b << "\n" ;
+    Widget oneWidget ;
+    vector<double>* pdVec = oneWidget.getPtrdVec() ;//00000000000000
+    for(int i=0 ;i<10 ;i++)
+        (*pdVec).push_back(1.1) ;
+    ostream_iterator<double> osIter(cout ," ") ;
+    cout << " print oneWidget.getPtrdVec() ...\n" ;
+    copy((*pdVec).begin() ,(*pdVec).end() ,osIter) ;
+    cout << "\n" ;
+    Widget otherWidget ;
+    otherWidget = oneWidget ;//00000000000000
+    //or: Widget otherWidget(oneWidget) ;//the same as "Widget otherWidget = oneWidget"
+    pdVec = otherWidget.getPtrdVec() ;//00000000000000
+    for(int i=0 ;i<5 ;i++)
+        (*pdVec).push_back(9.9) ;//(*pdVec)[i] = 9.9 ; //
+    cout << " print otherWidget.getPtrdVec() ...\n" ;
+    copy((*pdVec).begin() ,(*pdVec).end() ,osIter) ;
+    cout << "\n" ;
+    //cout << " (*pdVec).size(): " << (*pdVec).size() << "\n" ;
+    cout << " Again ,print oneWidget.getPtrdVec() ...\n" ;
+    pdVec = oneWidget.getPtrdVec() ;//00000000000000
+    copy((*pdVec).begin() ,(*pdVec).end() ,osIter) ;
+    cout << "\n" ;
+    // ... test 偏特化 std::swap(...)
+    cout << " (*oneWidget.getPtrdVec()).size(): " << (*oneWidget.getPtrdVec()).size() << "\n" ;
+    cout << " (*otherWidget.getPtrdVec()).size(): " << (*otherWidget.getPtrdVec()).size() << "\n" ;
+    swap(oneWidget ,otherWidget) ;
+    cout << " (*oneWidget.getPtrdVec()).size(): " << (*oneWidget.getPtrdVec()).size() << "\n" ;
+    cout << " (*otherWidget.getPtrdVec()).size(): " << (*otherWidget.getPtrdVec()).size() << "\n" ;
+
+    }
+    {//
+    cout << " test using namespace testItem25 ;\n" ;
+    using namespace testItem25 ;
+    Widget_T<int>   w1(10) ,w2(20) ;
+    w1.printWidget_T() ; w2.printWidget_T() ; // ...
+    swap(w1 ,w2) ;
+    w1.printWidget_T() ; w2.printWidget_T() ; // ...
+    }
+/*
+    {//
+    cout << " test using namespace testItem24 ;\n" ;
+    using namespace testItem24 ;
+    testFunc() ;
+    }
+
+/*
+    {//
+    cout << " test using namespace testItem20 ;\n" ;
+    using namespace testItem20 ;
+    WindowWithScrollBars    objWin ;
+    cout << " printNameAndDisplay_(objWin ) ,and then ... \n" ;
+    printNameAndDisplay_(objWin ) ;
+    cout << " printNameAndDisplay(objWin ) ,and then ... \n" ;
+    printNameAndDisplay(objWin ) ;
+    }
+/*
+    {//
+        cout << " test using namespace testItem17 ;\n" ;
+        using namespace testItem17 ;
+        try
+        {
+            testFunc() ;
+        }
+        catch(exception& e)
+        {
+            cout << e.what() << "\n" ;
+        }
+    }
+
+/*
+    {//
+    cout << " test using namespace testItem16 ;\n" ;
+    using namespace testItem16 ;
+    warnFuncDemo() ;
+    }
+/*
+    {// test namespace testItem13
+    cout << " test using namespace testItem13 ;\n" ;
+    using namespace testItem13 ;
+    Foo() ;
+    }
+/*
+    {//
+    cout << " test using namespace testItem12 ;\n" ;
+    using namespace testItem12 ;
+    //Human human ;//Error E2247 : 'Human::Human()' is not accessible in function main()|
+    Human human("huangjunkun" ,22) ;
+
+    Customer hjs("only" ,19891130 ,"only.hjky@yahoo.com.cn" , \
+                 "huangjunsen" ,21 ) ;//
+    cout << " *********print Customer hjk ... :\n" ;
+    Customer hjk("only" ,19880607 ,"only.hjky@yahoo.com.cn" , \
+                 "huangjunkun" ,22 ,&hjs) ;//
+    cout << hjk << "\n" ;
+    Customer* pEmptyCustomer = Customer::ctreateEmptyCustomer() ;
+    cout << " *********print a EmptyCustomer ... :\n" ;
+    cout << *pEmptyCustomer <<"\n" ;
+    *pEmptyCustomer = hjk ;
+    cout << " *pEmptyCustomer = hjk ; and print *pEmptyCustomer ... :\n" ;
+    cout << *pEmptyCustomer <<"\n" ;
+    *pEmptyCustomer = hjs ;
+    cout << " *pEmptyCustomer = hjs ; and print *pEmptyCustomer ... :\n" ;
+    cout << *pEmptyCustomer <<"\n" ;
+
+    delete pEmptyCustomer ;
+    }
+    /*
+    {
+    cout << " test using namespace testItem11 ;\n" ;
+    using namespace testItem11 ;
+    Widget g ;
+    g.print() ;
+    g = g ;// okokok
+    g.print() ;
+
+    }
+    /*
+    {//
+    cout << " test using namespace testItem10 ;\n" ;
+    using namespace testItem10 ;
+    Widget w0 ,w1(1) ,w2(2) ;
+    w0.printW() ;w1.printW() ;w2.printW() ;
+    (w0=w1).printW() ;//w0==w1
+    w0.printW() ;
+    (w0+=w2).printW() ;// w0==w1+w2
+    w0.printW() ;
+
+    }
+
+    /*
+    {//
+    cout << " test using namespace testItem09 ;\n" ;
+    using namespace testItem09 ;
+    //Transaction_Bad     tBad ;//Error E2352 : Cannot create instance of abstract class 'Transaction_Bad' in function main()|
+    Transaction_Good        tGood("tGood") ;//
+    BuyTransaction_Good     btGood(1) ;//
+    SellTransaction_Good    stGood(1) ;//
+    BuyTransaction_Bad      btBad ;// run time error ,pure virtual function called ...
+    SellTransaction_Bad     stBad ;// run time error ,pure virtual function called ...
+    }
+    /*
+    {
+    cout << " test using namespace testItem43 ;\n" ;
+    using namespace testItem43 ;
+    LoggingMsgSender<CompanyA> aMsgSender ;
+    LoggingMsgSender<CompanyB> bMsgSender ;
+    LoggingMsgSender<CompanyC> cMsgSender ;
+    MsgInfo  msginfo ;
+    aMsgSender.sendClearMsg(msginfo) ;
+    bMsgSender.sendClearMsg(msginfo) ;
+    //cMsgSender.sendClearMsg(msginfo) ;// error
+    // Error'sendClear' is not a member of 'LoggingMsgSender<CompanyC>' in function LoggingMsgSender<CompanyC>::sendClearMsg(const MsgInfo &)|
+    cMsgSender.sendSecret(msginfo) ;// okokok
+    }
+    {// test --namespace testItem48
+    cout << " test using namespace testItem48 ;\n" ;
+    using namespace testItem48 ;
+    cout << " Func<3>() = " << Func<3>() << "\n" ;
+    cout << " Factorial<0> = " << Factorial<0>::result << "\n" ;
+    cout << " Factorial<1> = " << Factorial<1>::result << "\n" ;
+    cout << " Factorial<5> = " << Factorial<5>::result << "\n" ;
+    //int i=10 ;
+//    cout << " " << Func<i>() << "\n" ;//error..
+    }
+    /*
+    {
+    cout << " test using namespace testItem42 ;\n" ;
+    using namespace testItem42 ;
+    int a[] = { 0 ,1 ,2 ,3 ,4 ,5 } ;
+    const signed NUM = sizeof(a)/sizeof(signed) ;
+    vector<int> iVec(a ,a+NUM) ;
+    print2nd(iVec) ;
+    vector<int> temp(1 ,5) ;
+    typedef vector<int>::iterator Iterator ;//const_iterator
+    Iterator it = find(iVec ,temp.begin()) ;
+    if(it!=iVec.end())
+        cout << " find temp.begin(): " << *it <<"\n" ;
+    else
+        cout << " not find temp.begin()...\n" ;
+    // -----------------
+    Base<int>::Nested   b(111) ;
+    cout << b << "\n";
+    Derived<int> d(999) ;
+    cout << d << "\n" ;
+
+    }
+    /*
+    {
+    cout << " test using namespace testItem33 ;\n" ;
+    using namespace testItem33 ;
+    Derived_1 d1 ;
+    int x = 1;
+    // ...
+    d1.mf1() ;
+    d1.mf1(x) ;
+    Derived_2 d2 ;
+    Base* pBase = (Base*)&d2 ;// :prwvate ,no (Base*) ,error
+    pBase->mf1() ;
+    }
+    /*
+    {
+    cout << " test using namespace testItem34 ;\n" ;
+    using namespace testItem34 ;
+    Shape* pShape ;
+    Rectangle rect ;
+    pShape = &rect ;
+    cout << " rect.objectID(): " << rect.objectID() << "\n" ;
+    pShape->draw() ;
+    cout << " void Shape::testError()\n" ;
+    pShape->testError() ;
+    Ellipse elli ;
+    pShape = &elli ;
+    cout << " elli.objectID(): " << elli.objectID() << "\n" ;
+    pShape->draw() ;
+    cout << " void Shape::testError()\n" ;
+    pShape->testError() ;
+    //pShape = NULL ;
+    //pShape->draw() ;// run tine error ...
+    }
+    /*
+    {
+    cout << " testusing namespace testItem34 ; \n" ;
+    using namespace testItem34 ;
+    Airport XiaMen("XiaMen") ;
+    ModelA  a ;
+    ModelB  b ;
+    ModelC  c ;
+    a.fly(XiaMen) ;
+    b.fly(XiaMen) ;
+    c.fly(XiaMen) ;
+    ModelD  d ;
+    ModelE  e ;
+    ModelF  f ;
+    d.fly(XiaMen) ;
+    e.fly(XiaMen) ;
+    f.fly(XiaMen) ;
+
+    }
+    {//
+    cout << " test using namespace testItem ;\n" ;
+    using namespace testItem ;
+    }

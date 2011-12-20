@@ -3,6 +3,7 @@
 ** date:          2011-12-20 14:25
 ** author:        junkun huang
 ** e-mail:        huangjunkun@gmail.com
-** Declare: 
+** declare: 
   该工程存放内容说明，在学习《Effective C++》过程中，编写的测试性和研究性的代码。欢迎交流，谢谢！
+  实验环境说明： Windows + CodeBlocks + MinGW
 **/

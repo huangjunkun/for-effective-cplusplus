@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1259052478 source:f:\codeblocks\effective c++ for mingw\main.cpp
+	<iostream>
+	<iomanip>
+	<typeinfo>
+	<vector>
+	<list>
+	<iterator>
+	<algorithm>
+	<stdexcept>
+	<function.hpp>
+	<shared_ptr.hpp>
+	<function.hpp>
+	<bind.hpp>
+	<scoped_array.hpp>
+	"Unit1.h"
+	"Unit4.h"
+
+1259054186 f:\codeblocks\effective c++ for mingw\unit1.h
+
+1258710792 f:\codeblocks\effective c++ for mingw\unit2.h
+
+1258784232 f:\codeblocks\effective c++ for mingw\unit3.h
+
+1259050726 f:\codeblocks\effective c++ for mingw\unit4.h
+
+1259052478 source:h:\f\codeblocks\effective c++ for mingw\main.cpp
+	<iostream>
+	<iomanip>
+	<typeinfo>
+	<vector>
+	<list>
+	<iterator>
+	<algorithm>
+	<stdexcept>
+	<function.hpp>
+	<shared_ptr.hpp>
+	<function.hpp>
+	<bind.hpp>
+	<scoped_array.hpp>
+	"Unit1.h"
+	"Unit4.h"
+
+1259054226 h:\f\codeblocks\effective c++ for mingw\unit1.h
+
+1259050726 h:\f\codeblocks\effective c++ for mingw\unit4.h
+
