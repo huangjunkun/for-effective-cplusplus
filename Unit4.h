@@ -476,10 +476,10 @@ namespace testItem46
     }
 }//namespace testItem46
 // ====================================================================
-// --- 条款47
+// --- 条款47：请使用traits classes表现类型类型
 // 注意：
-// 1
-// 2
+// 1：Traits classes 使得“类型相关信息”在编译期可用。它们templates和“templates特化”完成实现。
+// 2：整合重载技术（overloading）后，traits classes有可能在编译期对类型执行if ... else测试。
 // 3
 namespace testItem47
 {
