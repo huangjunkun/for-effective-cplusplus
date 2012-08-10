@@ -1,15 +1,15 @@
-#ifndef UNIT4_H_INCLUDED
+ï»¿#ifndef UNIT4_H_INCLUDED
 #define UNIT4_H_INCLUDED
 
-// ===  Æß¡¢Ä£°åÓë·ºĞÍ±à³Ì  ===========================================
+// ===  ä¸ƒã€æ¨¡æ¿ä¸æ³›å‹ç¼–ç¨‹  ===========================================
 // ====================================================================
-// --- Ìõ¿î41
-// ×¢Òâ£ºÁË½âÒşÊ½½Ó¿ÚºÍ±àÒëÆÚ¶àÌ¬ ...
-// 1    classes ºÍ templates ¶¼Ö§³Ö½Ó¿Ú(interfaces)ºÍ¶àÌ¬(polymorphism) ¡£
-// 2    ¶Ôclasses¶øÑÔ½Ó¿ÚÊÇÏÔÊ¾µÄ(explicit)£¬ÒÔº¯ÊıÇ©ÃûÎªÖĞĞÄ¡£¶àÌ¬ÔòÊÇÍ¨¹ıvirtualº¯Êı
-//      ·¢ÉúÓÚ³ÌĞòÔËĞĞÆÚ¡£
-// 3    ¶Ôtemplates ¶øÑÔ£¬½Ó¿ÚµÄÒşÊ½µÄ(implicit)£¬µì»ùÓÚÓĞĞ§±í´ïÊ½¡£¶àÌá°¡ÔòÊÇÍ¨¹ıtemplate
-//      ¾ßÏÖ»¯ºÍº¯ÊıÖØÔØ½âÎö(function overloading resolution)·¢ÉúÓÚ±àÒëÆÚ ...
+// --- æ¡æ¬¾41
+// æ³¨æ„ï¼šäº†è§£éšå¼æ¥å£å’Œç¼–è¯‘æœŸå¤šæ€ ...
+// 1    classes å’Œ templates éƒ½æ”¯æŒæ¥å£(interfaces)å’Œå¤šæ€(polymorphism) ã€‚
+// 2    å¯¹classesè€Œè¨€æ¥å£æ˜¯æ˜¾ç¤ºçš„(explicit)ï¼Œä»¥å‡½æ•°ç­¾åä¸ºä¸­å¿ƒã€‚å¤šæ€åˆ™æ˜¯é€šè¿‡virtualå‡½æ•°
+//      å‘ç”Ÿäºç¨‹åºè¿è¡ŒæœŸã€‚
+// 3    å¯¹templates è€Œè¨€ï¼Œæ¥å£çš„éšå¼çš„(implicit)ï¼Œå¥ åŸºäºæœ‰æ•ˆè¡¨è¾¾å¼ã€‚å¤šæå•Šåˆ™æ˜¯é€šè¿‡template
+//      å…·ç°åŒ–å’Œå‡½æ•°é‡è½½è§£æ(function overloading resolution)å‘ç”Ÿäºç¼–è¯‘æœŸ ...
 namespace testItem41
 {
     class Widget
@@ -32,7 +32,7 @@ namespace testItem41
         { return (value_ != rhs.value_) ; }
         // ...
     } ;
-    // º¯ÊıÇ©ÃûÏÔÊ¾½Ó¿Ú ... classes
+    // å‡½æ•°ç­¾åæ˜¾ç¤ºæ¥å£ ... classes
     static Widget someNastyWidget(0) ;// ...
     void doProcessing(Widget& w)
     {
@@ -43,7 +43,7 @@ namespace testItem41
             temp.swap(w) ;
         }
     }
-    // ÓĞĞ§±í´ïÊ½ÒşÊ½½Ó¿Ú ... templates
+    // æœ‰æ•ˆè¡¨è¾¾å¼éšå¼æ¥å£ ... templates
     template <typename T>
     void doProcessing_(T& w)
     {
@@ -64,11 +64,11 @@ namespace testItem41
 }//namespace testItem41
 
 // ====================================================================
-// --- Ìõ¿î42£ºÁË½âtypename µÄË«ÖØÒâÒå
-// ×¢Òâ£º
-// 1    ÉùÃ÷template ²ÎÊıÊ±£¬Ç°×º¹Ø¼ü×Öclass ºÍtypename¿É»¥»»¡£
-// 2    ÇëÊ¹ÓÃ¹Ø¼ü×Ötypename ±êÊ¶Ç¶Ì×´ÓÊôÀàĞÍÃû³Æ£»µ«²»µÃÔÚbase calss lists
-//      £¨»ùÀàÁĞ±í£©»òmember initialization list£¨³ÉÔ±³õÊ¼ÖµÁĞ±í£©ÄÚÒÔËü×÷Îªbase class ĞŞÊÎ·û
+// --- æ¡æ¬¾42ï¼šäº†è§£typename çš„åŒé‡æ„ä¹‰
+// æ³¨æ„ï¼š
+// 1    å£°æ˜template å‚æ•°æ—¶ï¼Œå‰ç¼€å…³é”®å­—class å’Œtypenameå¯äº’æ¢ã€‚
+// 2    è¯·ä½¿ç”¨å…³é”®å­—typename æ ‡è¯†åµŒå¥—ä»å±ç±»å‹åç§°ï¼›ä½†ä¸å¾—åœ¨base calss lists
+//      ï¼ˆåŸºç±»åˆ—è¡¨ï¼‰æˆ–member initialization listï¼ˆæˆå‘˜åˆå§‹å€¼åˆ—è¡¨ï¼‰å†…ä»¥å®ƒä½œä¸ºbase class ä¿®é¥°ç¬¦
 namespace testItem42
 {
     template <class T> class Widget_1{ } ;//okokok
@@ -162,10 +162,10 @@ namespace testItem42
     }
 } //namespace testItem42
 // ====================================================================
-// --- Ìõ¿î43£ºÑ§Ï°´¦ÀíÄ£°å»¯»ùÀàÄÚµÄÃû³Æ
-// ×¢Òâ£º
-// 1    ¿ÎÔÚderived class templates ÄÚÍ¨¹ı"this->" Ö¸Éæbase class templates ÄÚµÄ³ÉÔ±Ãû³Æ
-//      »ò½åÓÉÒ»¸öÃ÷°×Ğ´³öµÄ"base class ×Ê¸ñĞŞÊÎ·û"Íê³É¡£
+// --- æ¡æ¬¾43ï¼šå­¦ä¹ å¤„ç†æ¨¡æ¿åŒ–åŸºç±»å†…çš„åç§°
+// æ³¨æ„ï¼š
+// 1    è¯¾åœ¨derived class templates å†…é€šè¿‡"this->" æŒ‡æ¶‰base class templates å†…çš„æˆå‘˜åç§°
+//      æˆ–è—‰ç”±ä¸€ä¸ªæ˜ç™½å†™å‡ºçš„"base class èµ„æ ¼ä¿®é¥°ç¬¦"å®Œæˆã€‚
 // 2
 namespace testItem43
 {
@@ -202,14 +202,14 @@ namespace testItem43
         void sendClear(const MsgInfo& info)
         {
             std::string msg ;
-            //ÔÚÕâÀï¸ù¾İinfo²úÉúĞÅÏ¢ £»
+            //åœ¨è¿™é‡Œæ ¹æ®infoäº§ç”Ÿä¿¡æ¯ ï¼›
             Company c ;
             c.sendCleartext(msg) ;
         }
         void sendSecret(const MsgInfo& info)
         {
             std::string msg ;
-            //ÔÚÕâÀï¸ù¾İinfo²úÉúĞÅÏ¢ £»
+            //åœ¨è¿™é‡Œæ ¹æ®infoäº§ç”Ÿä¿¡æ¯ ï¼›
             Company c ;
             c.sendEncrypted(msg) ;
         }//...
@@ -222,7 +222,7 @@ namespace testItem43
         void sendSecret(const MsgInfo& info)
         {
             std::string msg ;
-            //ÔÚÕâÀï¸ù¾İinfo²úÉúĞÅÏ¢ £»
+            //åœ¨è¿™é‡Œæ ¹æ®infoäº§ç”Ÿä¿¡æ¯ ï¼›
             CompanyC c ;
             c.sendEncrypted(msg) ;
         }
@@ -237,7 +237,7 @@ namespace testItem43
         using MsgSender<Company>::sendClear ; //typename 2: non-virtual member (function) ...
         void sendClearMsg(const MsgInfo& info)
         {
-            // ½«¡°´«ËÍÇ°¡±µÄĞÅÏ¢Ğ´ÖÁlog
+            // å°†â€œä¼ é€å‰â€çš„ä¿¡æ¯å†™è‡³log
             // 1:
             this->sendClear(info) ;// okok ---sendClear(info) ;//error???nonono
             // or: .... 2: non-virtual member (function)
@@ -245,42 +245,42 @@ namespace testItem43
             // or: .... 3: non-virtual member (function)
             //MsgSender<Company>::sendClear(info) ;
 
-            // ½«¡°´«ËÍºó¡±µÄĞÅÏ¢Ğ´ÖÁlog
+            // å°†â€œä¼ é€åâ€çš„ä¿¡æ¯å†™è‡³log
         }
     } ;
 }//namespace testItem43
 // ====================================================================
-// --- Ìõ¿î44£º½«Óë²ÎÊıÎŞ¹ØµÄ´úÂë³éÀë templates
-// ×¢Òâ£º
-// 1    Templates Éú³É¶à¸öclasses ºÍ ¶à¸öº¯Êı £¬ËùÒÔÈÎºÎtemplate ´úÂë¶¼²»¸ÃÓëÄ³¸öÔì³ÉÅòÕÍ
-//      µÄtempalte²ÎÊı²úÉúÏàÒÀ¹ØÏµ ...
-// 2    Òò·ÇÀàĞÍÄ£°å²ÎÊı(non-type tempalte parameters)¶øÔì³ÉµÄ´úÂëÅòÕÍ£¬ÍùÍù¿ÉÒÔÏû³ı£¬×ö·¨
-//      ÊÇÒÔº¯Êı²ÎÊı»òclasses ³ÉÔ±±äÁ¿Ìæ»» template ²ÎÊı ...
-// 3    ÒòÀàĞÍ²ÎÊı(type parameters) ¶øÔì³ÉµÄ´úÂëÅòÕÍ£¬ÍùÍù¿ÉÒÔ½µµÍ£¬×ö·¨ÊÇÈÃµ½ÓÒÍêÈ«ÏàÍ¬
-//      ¶ş½øÖÆ±íÊö(binary representations)µÄ¾ßÌåÀàĞÍ(instantiation types)¹²ÏíÊµÏÖÂë ....
+// --- æ¡æ¬¾44ï¼šå°†ä¸å‚æ•°æ— å…³çš„ä»£ç æŠ½ç¦» templates
+// æ³¨æ„ï¼š
+// 1    Templates ç”Ÿæˆå¤šä¸ªclasses å’Œ å¤šä¸ªå‡½æ•° ï¼Œæ‰€ä»¥ä»»ä½•template ä»£ç éƒ½ä¸è¯¥ä¸æŸä¸ªé€ æˆè†¨èƒ€
+//      çš„tempalteå‚æ•°äº§ç”Ÿç›¸ä¾å…³ç³» ...
+// 2    å› éç±»å‹æ¨¡æ¿å‚æ•°(non-type tempalte parameters)è€Œé€ æˆçš„ä»£ç è†¨èƒ€ï¼Œå¾€å¾€å¯ä»¥æ¶ˆé™¤ï¼Œåšæ³•
+//      æ˜¯ä»¥å‡½æ•°å‚æ•°æˆ–classes æˆå‘˜å˜é‡æ›¿æ¢ template å‚æ•° ...
+// 3    å› ç±»å‹å‚æ•°(type parameters) è€Œé€ æˆçš„ä»£ç è†¨èƒ€ï¼Œå¾€å¾€å¯ä»¥é™ä½ï¼Œåšæ³•æ˜¯è®©åˆ°å³å®Œå…¨ç›¸åŒ
+//      äºŒè¿›åˆ¶è¡¨è¿°(binary representations)çš„å…·ä½“ç±»å‹(instantiation types)å…±äº«å®ç°ç  ....
 namespace testItem44
 {
-    //1  --- Ã»ÓĞ½«Óë²ÎÊıÎŞ¹ØµÄ´úÂë³éÀë templateS ...
+    //1  --- æ²¡æœ‰å°†ä¸å‚æ•°æ— å…³çš„ä»£ç æŠ½ç¦» templateS ...
     template <typename T ,std::size_t N>
     class SquareMatrix_
     {
     public:
         // ...
-        void invert() ;// ÇóÄæ¾ØÕó ...
+        void invert() ;// æ±‚é€†çŸ©é˜µ ...
     } ;
     template <typename T ,std::size_t N>
     void SquareMatrix_<T ,N>::invert() {} // ...
-    // ÈôÒòÎª SquareMatrix µÄN ²»Í¬¾ßÏÖ³öºÜ¶àÀàĞÍ£¬Ôòµ¼ÖÂ´úÂëÅòÕÍ ...
+    // è‹¥å› ä¸º SquareMatrix çš„N ä¸åŒå…·ç°å‡ºå¾ˆå¤šç±»å‹ï¼Œåˆ™å¯¼è‡´ä»£ç è†¨èƒ€ ...
     void exampleFunc()
     {
         SquareMatrix_<double ,5> sm1 ;
         // ...
         sm1.invert() ;
-        SquareMatrix_<double ,10> sm2 ;// sm1 ºÍ sm2 ²»Í¬ÀàĞÍ ...
+        SquareMatrix_<double ,10> sm2 ;// sm1 å’Œ sm2 ä¸åŒç±»å‹ ...
         // ...
         sm2.invert() ;
     }
-    //2  --- ½«Óë²ÎÊıÎŞ¹ØµÄ´úÂë³éÀë templateS ...
+    //2  --- å°†ä¸å‚æ•°æ— å…³çš„ä»£ç æŠ½ç¦» templateS ...
     template <typename T>
     class SquareMatrixBase
     {
@@ -301,19 +301,19 @@ namespace testItem44
         SquareMatrix() : SquareMatrixBase<T>(N ,pData_) {}// ..
         // ...
     private:
-        //T   pData_[N*N] ;// ¿ÉÄÜµ¼ÖÂclass SquareMatrix ¶ÔÏó´óĞ¡ºÜ´ó ...Êı¾İ´æ´¢ÓÚ³ÌĞòÕ» ...
-        std::tr1::scoped_array<T> pData_ ; // or: std::tr1::scoped_array<T>£¬Êı¾İ´æ´¢ÓÚ¶Ñ ...
+        //T   pData_[N*N] ;// å¯èƒ½å¯¼è‡´class SquareMatrix å¯¹è±¡å¤§å°å¾ˆå¤§ ...æ•°æ®å­˜å‚¨äºç¨‹åºæ ˆ ...
+        std::tr1::scoped_array<T> pData_ ; // or: std::tr1::scoped_array<T>ï¼Œæ•°æ®å­˜å‚¨äºå † ...
     } ;
-    // ²»ÂÛÊı¾İ´æ´¢ÓÚºÎ´¦£¬´ÓÅòÕÍµÄ½Ç¶ÈÌÖÂÛÖ®£¬¹Ø¼üÊÇÏÖÔÚĞí¶àSquareMatrix³ÉÔ±º¯Êı¿ÉÒÔµ¥´¿µØÒÔ
-    // inline ·½Ê½µ÷ÓÃbase class °æ±¾£¬ºóÕßÓÉ"³ÖÓĞÍ¬ĞÍÔªËØ¡°£¨²»ÂÛ¾ØÕó´óĞ¡£©Ö®ËùÓĞ¾ØÕó¹²Ïí ..
+    // ä¸è®ºæ•°æ®å­˜å‚¨äºä½•å¤„ï¼Œä»è†¨èƒ€çš„è§’åº¦è®¨è®ºä¹‹ï¼Œå…³é”®æ˜¯ç°åœ¨è®¸å¤šSquareMatrixæˆå‘˜å‡½æ•°å¯ä»¥å•çº¯åœ°ä»¥
+    // inline æ–¹å¼è°ƒç”¨base class ç‰ˆæœ¬ï¼Œåè€…ç”±"æŒæœ‰åŒå‹å…ƒç´ â€œï¼ˆä¸è®ºçŸ©é˜µå¤§å°ï¼‰ä¹‹æ‰€æœ‰çŸ©é˜µå…±äº« ..
 
 }//namespace testItem44
 // ====================================================================
-// --- Ìõ¿î45£ºÔËÓÃ³ÉÔ±º¯ÊıÄ£°å½ÓÊÜËùÓĞ¼æÈİÀàĞÍ ...
-// ×¢Òâ£º
-// 1    ÇëÊ¹ÓÃ³ÉÔ±º¯ÊıÄ£°å(member function templates) Éú³É¡±¿É½ÓÊÜËùÓĞ¼æÈİÀàĞÍ¡°µÄº¯Êı ...
-// 2    Èç¹ûÄãÉùÃ÷ÁË member templates ÓÃÓÚ ¡±·º»¯copy ¹¹Ôì¡°»ò¡±·º»¯ assignment²Ù×÷¡°£¬Äã»¹ÊÇĞèÒª
-//      ÉùÃ÷Õı³£µÄcopy ¹¹Ôìº¯ÊıºÍcopy assignment ²Ù×÷·û ...
+// --- æ¡æ¬¾45ï¼šè¿ç”¨æˆå‘˜å‡½æ•°æ¨¡æ¿æ¥å—æ‰€æœ‰å…¼å®¹ç±»å‹ ...
+// æ³¨æ„ï¼š
+// 1    è¯·ä½¿ç”¨æˆå‘˜å‡½æ•°æ¨¡æ¿(member function templates) ç”Ÿæˆâ€å¯æ¥å—æ‰€æœ‰å…¼å®¹ç±»å‹â€œçš„å‡½æ•° ...
+// 2    å¦‚æœä½ å£°æ˜äº† member templates ç”¨äº â€æ³›åŒ–copy æ„é€ â€œæˆ–â€æ³›åŒ– assignmentæ“ä½œâ€œï¼Œä½ è¿˜æ˜¯éœ€è¦
+//      å£°æ˜æ­£å¸¸çš„copy æ„é€ å‡½æ•°å’Œcopy assignment æ“ä½œç¬¦ ...
 // 3
 namespace testItem45
 {
@@ -373,13 +373,13 @@ namespace testItem45
     private:
         mutable T*  heldPtr ; // ...
     } ;
-    // ... ²ÎÕÕ£¬boost::shared_ptr<T>µÄÏêÏ¸ÊµÏÖ ...
+    // ... å‚ç…§ï¼Œboost::shared_ptr<T>çš„è¯¦ç»†å®ç° ...
     void exampleFunc()
     {
         /*
-        Top* pt1 = new Middle ;// ½«Middle* ×ª»¯Îª Top* ---×Ô¶¯
-        Top* pt2 = new Bottom ;// ½«Bottom* ×ª»¯Îª Top* ---×Ô¶¯
-        const Top pct1 = pt1 ; // ½«Top* ×ª»¯Îª const Top* ---×Ô¶¯
+        Top* pt1 = new Middle ;// å°†Middle* è½¬åŒ–ä¸º Top* ---è‡ªåŠ¨
+        Top* pt2 = new Bottom ;// å°†Bottom* è½¬åŒ–ä¸º Top* ---è‡ªåŠ¨
+        const Top pct1 = pt1 ; // å°†Top* è½¬åŒ–ä¸º const Top* ---è‡ªåŠ¨
         */
         SmartPtr<Top> pt1 = SmartPtr<Middle>(new Middle) ;
         SmartPtr<Top> pt2 = SmartPtr<Bottom>(new Bottom) ;
@@ -389,18 +389,18 @@ namespace testItem45
     }
 }//namespace testItem45
 // ====================================================================
-// --- Ìõ¿î46£ºĞèÒªÀàĞÍ×ª»»Ê±ÇëÎªÄ£°å¶¨Òå·Ç³ÉÔ±º¯Êı ...²ÎÕÕÌõ¿î24 ...
-// ×¢Òâ£º
-// 1    µ±ÎÒÃÇ±àĞ´Ò»¸ö class template £¬¶øËüËùÌá¹©Ö®¡±Óë´ËtemplateÏà¹ØµÄ¡±º¯ÊıÖ§³Ö¡°ËùÓĞ²ÎÊı
-//      Ö®ÒşÊ½ÀàĞÍ×ª»»¡±Ê±£¬Çë½«ÄÇĞ©º¯Êı¶¨ÒåÎª¡°class templateÄÚ²¿µÄfriendº¯Êı ¡° ...
+// --- æ¡æ¬¾46ï¼šéœ€è¦ç±»å‹è½¬æ¢æ—¶è¯·ä¸ºæ¨¡æ¿å®šä¹‰éæˆå‘˜å‡½æ•° ...å‚ç…§æ¡æ¬¾24 ...
+// æ³¨æ„ï¼š
+// 1    å½“æˆ‘ä»¬ç¼–å†™ä¸€ä¸ª class template ï¼Œè€Œå®ƒæ‰€æä¾›ä¹‹â€ä¸æ­¤templateç›¸å…³çš„â€å‡½æ•°æ”¯æŒâ€œæ‰€æœ‰å‚æ•°
+//      ä¹‹éšå¼ç±»å‹è½¬æ¢â€æ—¶ï¼Œè¯·å°†é‚£äº›å‡½æ•°å®šä¹‰ä¸ºâ€œclass templateå†…éƒ¨çš„friendå‡½æ•° â€œ ...
 // 2
 // 3
 namespace testItem46
 {
-    // ÏÈÉùÃ÷ template class Rational ....
+    // å…ˆå£°æ˜ template class Rational ....
     template <typename T>
     class Rational ;
-    // ÏÈÉùÃ÷ º¯Êı doMutilply ....
+    // å…ˆå£°æ˜ å‡½æ•° doMutilply ....
     template <typename T>
     const Rational<T>  doMutilply(const Rational<T>& lhs ,const Rational<T>& rhs) ;
     //
@@ -410,9 +410,9 @@ namespace testItem46
     private:
         T n_ ,d_ ;
     public:
-        Rational(T numerator = T(0) ,T denominator = T(1) )//Ìõ¿î24ËµÃ÷ÎªÊ²Ã´Õâ¸ö¹¹Ôìº¯Êı
+        Rational(T numerator = T(0) ,T denominator = T(1) )//æ¡æ¬¾24è¯´æ˜ä¸ºä»€ä¹ˆè¿™ä¸ªæ„é€ å‡½æ•°
         : n_(numerator) ,d_(denominator)
-        {}// ... ²»ÉùÃ÷Îª explicit ...
+        {}// ... ä¸å£°æ˜ä¸º explicit ...
         T numerator() const { return n_ ; }
         T denominator() const { return d_ ; }
         /*
@@ -434,7 +434,7 @@ namespace testItem46
         friend const Rational  operator* (const Rational& lhs ,const Rational& rhs)
         {
             return Rational<T>(lhs.numerator()*rhs.numerator(),lhs.denominator()*rhs.denominator()) ;
-            //doMutilply(lhs ,rhs) ; // or :µ÷ÓÃÍâ²¿¸¨Öúº¯Êı ... ºÜºÃµÄµã×Ó £¡£¡£¡
+            //doMutilply(lhs ,rhs) ; // or :è°ƒç”¨å¤–éƒ¨è¾…åŠ©å‡½æ•° ... å¾ˆå¥½çš„ç‚¹å­ ï¼ï¼ï¼
         }
         // inlining
         friend ostream& operator << (ostream& os ,const Rational& rhs)
@@ -476,21 +476,21 @@ namespace testItem46
     }
 }//namespace testItem46
 // ====================================================================
-// --- Ìõ¿î47£ºÇëÊ¹ÓÃtraits classes±íÏÖÀàĞÍÀàĞÍ
-// ×¢Òâ£º
-// 1£ºTraits classes Ê¹µÃ¡°ÀàĞÍÏà¹ØĞÅÏ¢¡±ÔÚ±àÒëÆÚ¿ÉÓÃ¡£ËüÃÇtemplatesºÍ¡°templatesÌØ»¯¡±Íê³ÉÊµÏÖ¡£
-// 2£ºÕûºÏÖØÔØ¼¼Êõ£¨overloading£©ºó£¬traits classesÓĞ¿ÉÄÜÔÚ±àÒëÆÚ¶ÔÀàĞÍÖ´ĞĞif ... else²âÊÔ¡£
+// --- æ¡æ¬¾47ï¼šè¯·ä½¿ç”¨traits classesè¡¨ç°ç±»å‹ç±»å‹
+// æ³¨æ„ï¼š
+// 1ï¼šTraits classes ä½¿å¾—â€œç±»å‹ç›¸å…³ä¿¡æ¯â€åœ¨ç¼–è¯‘æœŸå¯ç”¨ã€‚å®ƒä»¬templateså’Œâ€œtemplatesç‰¹åŒ–â€å®Œæˆå®ç°ã€‚
+// 2ï¼šæ•´åˆé‡è½½æŠ€æœ¯ï¼ˆoverloadingï¼‰åï¼Œtraits classesæœ‰å¯èƒ½åœ¨ç¼–è¯‘æœŸå¯¹ç±»å‹æ‰§è¡Œif ... elseæµ‹è¯•ã€‚
 // 3
 namespace testItem47
 {
 }//namespace testItem47
 // ====================================================================
-// --- Ìõ¿î48£ºÈÏÊ¶template Ôª±à³Ì
-// ×¢Òâ£º
-// 1£ºTemplate metaprogramming(TMP £¬Ä£°åÔª±à³Ì)¿É½«¹¤×÷ÓÉÔËĞĞÆÚÒÆÍù±àÒëÆÚ£¬
-//    Òò¶øµÃÒÔÊµÏÖÔçÆÚ´íÎóÕì²âºÍ¸ü¸ßµÄÖ´ĞĞĞ§ÂÊ
-// 2£ºTMP ¿É±»ÓÃÀ´Éú³É"»ùÓÚ²ßÂÔÑ¡Ôñ×éºÏ" µÄ¿Í»§¶¨ÖÆ´úÂë£¬Ò²¿ÉÒÔÓÃÀ´±ÜÃâÉú³É
-//    ¶ÔÄ³Ğ©ÌØÊâÀàĞÍ²¢²»ºÏÊÊµÄ´úÂë
+// --- æ¡æ¬¾48ï¼šè®¤è¯†template å…ƒç¼–ç¨‹
+// æ³¨æ„ï¼š
+// 1ï¼šTemplate metaprogramming(TMP ï¼Œæ¨¡æ¿å…ƒç¼–ç¨‹)å¯å°†å·¥ä½œç”±è¿è¡ŒæœŸç§»å¾€ç¼–è¯‘æœŸï¼Œ
+//    å› è€Œå¾—ä»¥å®ç°æ—©æœŸé”™è¯¯ä¾¦æµ‹å’Œæ›´é«˜çš„æ‰§è¡Œæ•ˆç‡
+// 2ï¼šTMP å¯è¢«ç”¨æ¥ç”Ÿæˆ"åŸºäºç­–ç•¥é€‰æ‹©ç»„åˆ" çš„å®¢æˆ·å®šåˆ¶ä»£ç ï¼Œä¹Ÿå¯ä»¥ç”¨æ¥é¿å…ç”Ÿæˆ
+//    å¯¹æŸäº›ç‰¹æ®Šç±»å‹å¹¶ä¸åˆé€‚çš„ä»£ç 
 // 3
 namespace testItem48
 {
@@ -520,8 +520,8 @@ namespace testItem48
     { enum { result = 1  } ;} ;
 }//namespace testItem48
 // ====================================================================
-// --- Ìõ¿î
-// ×¢Òâ£º
+// --- æ¡æ¬¾
+// æ³¨æ„ï¼š
 // 1
 // 2
 // 3
@@ -529,8 +529,8 @@ namespace testItem
 {
 }//namespace testItem
 // ====================================================================
-// --- Ìõ¿î49
-// ×¢Òâ£º
+// --- æ¡æ¬¾49
+// æ³¨æ„ï¼š
 // 1
 // 2
 // 3

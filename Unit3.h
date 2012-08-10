@@ -1,14 +1,14 @@
-#ifndef UNIT3_H_INCLUDED
+ï»¿#ifndef UNIT3_H_INCLUDED
 #define UNIT3_H_INCLUDED
 
 
 //# pragma warning(push)
 //# pragma warning(disable:8057) //
-// ===  Îå¡¢ÊµÏÖ ======================================================
+// ===  äº”ã€å®ç° ======================================================
 // ====================================================================
-// --- Ìõ¿î26£º¾¡¿ÉÄÜÑÓºó±äÁ¿¶¨ÒåÊ½µÄ³öÏÖÊ±¼ä ...
-// ×¢Òâ£º
-// 1    ¾¡¿ÉÄÜÑÓºó±äÁ¿¶¨ÒåÊ½µÄ³öÏÖÊ±¼ä£¬ÕâÑù×ö¿ÉÒÔÔö¼Ó³ÌĞòµÄÇåÎú¶È²¢¸ÄÉÆ³ÌĞòµÄĞ§ÂÊ
+// --- æ¡æ¬¾26ï¼šå°½å¯èƒ½å»¶åå˜é‡å®šä¹‰å¼çš„å‡ºç°æ—¶é—´ ...
+// æ³¨æ„ï¼š
+// 1    å°½å¯èƒ½å»¶åå˜é‡å®šä¹‰å¼çš„å‡ºç°æ—¶é—´ï¼Œè¿™æ ·åšå¯ä»¥å¢åŠ ç¨‹åºçš„æ¸…æ™°åº¦å¹¶æ”¹å–„ç¨‹åºçš„æ•ˆç‡
 // 2
 namespace testItem26
 {
@@ -26,7 +26,7 @@ namespace testItem26
     void exampleFunc()
     {
         using testItem10::Widget ;
-        // 1    1¸ö¹¹Ôìº¯Êı+1¸öÎö¹¹º¯Êı+n¸ö¸³Öµ²Ù×÷£¨³É±¾£©
+        // 1    1ä¸ªæ„é€ å‡½æ•°+1ä¸ªææ„å‡½æ•°+nä¸ªèµ‹å€¼æ“ä½œï¼ˆæˆæœ¬ï¼‰
         // ...
         Widget w ;
         for(int i=0 ;i<10 ;i++) // n = 10
@@ -35,7 +35,7 @@ namespace testItem26
             // ....
         }
         // ...
-        // 2    n¸ö¹¹Ôìº¯Êı+n¸öÎö¹¹º¯Êı ... £¨³É±¾£©
+        // 2    nä¸ªæ„é€ å‡½æ•°+nä¸ªææ„å‡½æ•° ... ï¼ˆæˆæœ¬ï¼‰
         // ...
         for(int i=0 ;i<10 ;i++)
         {
@@ -47,17 +47,17 @@ namespace testItem26
     }
 }//namespace testItem26
 // ====================================================================
-// --- Ìõ¿î27£º¾¡Á¿ÉÙ×ö×ªĞÍ¶¯×÷ ...
-// ×¢Òâ£ºstatic_cast ,dynamic_cast ,const_cast ,reinterpret_cast ... XXX_cast<Type> (Expr)...
-// 1    Èç¹û¿ÉÒÔ¾¡Á¿ÉÙ×ö×ªĞÍ£¨±ÜÃâ£©£¬ÌØ±ğÊÇ×¢ÖØĞ§ÂÊµÄ´úÂëÖĞ£¬±ÜÃâdynamic_cast S¡£
-//      Èç¹ûÓĞ¸öÉè¼ÆĞèÒª×ªĞÍ¶¯×÷£¬ÊÔ×Å·¢Õ¹ÎŞĞè×ªĞÍµÄÌæ´úÉè¼Æ ....
-// 2    Èç¹û×ªĞÍµÄ±ØĞëµÄ£¬ÊÔ×Å½«ËüÒş²ØÓÚÄ³¸öº¯Êı±³ºó¡£¿Í»§Ëæºó¿ÉÒÔµ÷ÓÃ¸Ãº¯Êı£¬
-//      ¶ø²»Ğè½«×ªĞÍ·Å½øËûÃÇµÄ×Ô¼º´úÂëÄÚ¡£
-// 3    Äş¿ÉÊ¹ÓÃ C++ Style£¨ĞÂÊ½£©×ªĞÍ£¬²»ÒªÊµÑé¾ÉÊ½×ªĞÍ¡£Ç°ÕßºÜÈİÒ×±æ±ğ³öÀ´£¬
-//      ¶øÇÒÒ²±È½ÏÓĞ×Å·ÖÃÅ±ğÀàµÄÖ°ÕÆ ¡£
+// --- æ¡æ¬¾27ï¼šå°½é‡å°‘åšè½¬å‹åŠ¨ä½œ ...
+// æ³¨æ„ï¼šstatic_cast ,dynamic_cast ,const_cast ,reinterpret_cast ... XXX_cast<Type> (Expr)...
+// 1    å¦‚æœå¯ä»¥å°½é‡å°‘åšè½¬å‹ï¼ˆé¿å…ï¼‰ï¼Œç‰¹åˆ«æ˜¯æ³¨é‡æ•ˆç‡çš„ä»£ç ä¸­ï¼Œé¿å…dynamic_cast Sã€‚
+//      å¦‚æœæœ‰ä¸ªè®¾è®¡éœ€è¦è½¬å‹åŠ¨ä½œï¼Œè¯•ç€å‘å±•æ— éœ€è½¬å‹çš„æ›¿ä»£è®¾è®¡ ....
+// 2    å¦‚æœè½¬å‹çš„å¿…é¡»çš„ï¼Œè¯•ç€å°†å®ƒéšè—äºæŸä¸ªå‡½æ•°èƒŒåã€‚å®¢æˆ·éšåå¯ä»¥è°ƒç”¨è¯¥å‡½æ•°ï¼Œ
+//      è€Œä¸éœ€å°†è½¬å‹æ”¾è¿›ä»–ä»¬çš„è‡ªå·±ä»£ç å†…ã€‚
+// 3    å®å¯ä½¿ç”¨ C++ Styleï¼ˆæ–°å¼ï¼‰è½¬å‹ï¼Œä¸è¦å®éªŒæ—§å¼è½¬å‹ã€‚å‰è€…å¾ˆå®¹æ˜“è¾¨åˆ«å‡ºæ¥ï¼Œ
+//      è€Œä¸”ä¹Ÿæ¯”è¾ƒæœ‰ç€åˆ†é—¨åˆ«ç±»çš„èŒæŒ ã€‚
 namespace testItem27
 {
-    // ±ÜÃâÊ¹ÓÃ dynamic_cast £¬Á½¸öÒ»°ãĞÔ×ö·¨ for void blink()ÈçÏÂ£º 11111 £¬22222
+    // é¿å…ä½¿ç”¨ dynamic_cast ï¼Œä¸¤ä¸ªä¸€èˆ¬æ€§åšæ³• for void blink()å¦‚ä¸‹ï¼š 11111 ï¼Œ22222
     class Window
     {
     public:
@@ -70,7 +70,7 @@ namespace testItem27
     public:
         void OnResize()  // virtual ....
         {
-            //static_cast<Window>(*this).OnResize() ;// error ,ÁÙÊ±¶ÔÏó...!!!
+            //static_cast<Window>(*this).OnResize() ;// error ,ä¸´æ—¶å¯¹è±¡...!!!
             Window::OnResize() ; // okokok....
         }
         void blink()  //...virtual
@@ -84,24 +84,24 @@ namespace testItem27
         {
         VPW winPtrs ;
         // ...
-        for(VPW::iterator iter = winPtrs.begin() ;//²»Ï£ÍûÊ¹ÓÃdynamic_cast ...
+        for(VPW::iterator iter = winPtrs.begin() ;//ä¸å¸Œæœ›ä½¿ç”¨dynamic_cast ...
             iter != winPtrs.end() ;iter++)
             if( SpecialWindow* psw = dynamic_cast<SpecialWindow*>(iter->get()) )
                 psw->blink() ;
         }
         {
         //  2))))
-        VSPW   winPtrs ; //·¨Ò»£º11111
+        VSPW   winPtrs ; //æ³•ä¸€ï¼š11111
         // ...
-        for(VSPW::iterator iter = winPtrs.begin() ;//ÕâÑù±È½ÏºÃ£¬²»Ê¹ÓÃdynamic_cast ...
+        for(VSPW::iterator iter = winPtrs.begin() ;//è¿™æ ·æ¯”è¾ƒå¥½ï¼Œä¸ä½¿ç”¨dynamic_cast ...
             iter != winPtrs.end() ;iter++)
                 (*iter)->blink() ;
         }
         {
         //  3))))
-        VPW    winPtrs ; // ·¨¶ş£º22222
+        VPW    winPtrs ; // æ³•äºŒï¼š22222
         // ...
-        for(VPW::iterator iter = winPtrs.begin() ;//ÕâÑù±È½ÏºÃ£¬²»Ê¹ÓÃdynamic_cast ...
+        for(VPW::iterator iter = winPtrs.begin() ;//è¿™æ ·æ¯”è¾ƒå¥½ï¼Œä¸ä½¿ç”¨dynamic_cast ...
             iter != winPtrs.end() ;iter++)
                 (*iter)->blink() ;
         }
@@ -110,11 +110,11 @@ namespace testItem27
 
 }//namespace testItem27
 // ====================================================================
-// --- Ìõ¿î28£º±ÜÃâ·µ»Øhandles Ö¸Ïò¶ÔÏóµÄÄÚ²¿³É·Ö ...
-// ×¢Òâ£º
-// 1    ±ÜÃâ·µ»Ø handles£¨°üÀ¨references¡¢Ö¸Õë¡¢µü´úÆ÷£©Ö¸Ïò¶ÔÏóÄÚ²¿¡£×ñÊØÕâ¸öÌõ¿î
-//      ¿ÉÒÔÔö¼Ó³ÌĞòµÄ·â×°ĞÔ£¬°ïÖúconst ³ÉÔ±º¯ÊıµÄĞĞÎªÏñ¸öconst£¬²¢½«·¢Éú¡°ĞèµõºÅÂëÅÆ¡±
-//      (dangling handles) µÄ¿ÉÄÜĞÔ½µµÍÖÁ×îµÍ ...
+// --- æ¡æ¬¾28ï¼šé¿å…è¿”å›handles æŒ‡å‘å¯¹è±¡çš„å†…éƒ¨æˆåˆ† ...
+// æ³¨æ„ï¼š
+// 1    é¿å…è¿”å› handlesï¼ˆåŒ…æ‹¬referencesã€æŒ‡é’ˆã€è¿­ä»£å™¨ï¼‰æŒ‡å‘å¯¹è±¡å†…éƒ¨ã€‚éµå®ˆè¿™ä¸ªæ¡æ¬¾
+//      å¯ä»¥å¢åŠ ç¨‹åºçš„å°è£…æ€§ï¼Œå¸®åŠ©const æˆå‘˜å‡½æ•°çš„è¡Œä¸ºåƒä¸ªconstï¼Œå¹¶å°†å‘ç”Ÿâ€œéœ€åŠå·ç ç‰Œâ€
+//      (dangling handles) çš„å¯èƒ½æ€§é™ä½è‡³æœ€ä½ ...
 // 2
 // 3
 namespace testItem28
@@ -149,9 +149,9 @@ namespace testItem28
         // ...
         Rectangle():pData(new RectData) { }
         // ...
-        const Point& upperLeft() const// return non-const,warn !!!,but ,Point& ¿ÉÄÜ³ö´í--ĞèµõºÅÂëÅÆ
+        const Point& upperLeft() const// return non-const,warn !!!,but ,Point& å¯èƒ½å‡ºé”™--éœ€åŠå·ç ç‰Œ
         { return pData->ulhc ; } //
-        const Point& lowerRight() const//return non-const,warn !!!,but ,Point& ¿ÉÄÜ³ö´í--ĞèµõºÅÂëÅÆ
+        const Point& lowerRight() const//return non-const,warn !!!,but ,Point& å¯èƒ½å‡ºé”™--éœ€åŠå·ç ç‰Œ
         { return pData->lrhc ; } //
         // or : ... if okokok...
         /*
@@ -161,7 +161,7 @@ namespace testItem28
         { return pData->lrhc ; } //
         */
     } ;
-    // ... for example :Point& ¿ÉÄÜ³ö´í--ĞèµõºÅÂëÅÆ
+    // ... for example :Point& å¯èƒ½å‡ºé”™--éœ€åŠå·ç ç‰Œ
     class GUIObject {} ; // ...
     const Rectangle boundingBox(const GUIObject& obj)// ...
     {
@@ -174,19 +174,19 @@ namespace testItem28
         GUIObject GUIObj ;
         // ...
         const Point* pUpperLeft = &(boundingBox(GUIObj).upperLeft()) ;
-        //.pUpperLeft ,dangerous pUpperLeft from ÁÙÊ±¶ÔÏó reference ( from boundingBox function ...)
+        //.pUpperLeft ,dangerous pUpperLeft from ä¸´æ—¶å¯¹è±¡ reference ( from boundingBox function ...)
         pUpperLeft->print() ;
         //  ...
     }
 }//namespace testItem28
 // ====================================================================
-// --- Ìõ¿î29£ºÎª¡°Òì³£°²È«¡±¶øÅ¬Á¦Ê±ÖµµÃµÄ
-// ×¢Òâ£º
-// 1    Òì³£°²È«º¯Êı( Exception-safe functions)¼´Ê¹·¢ÉúÒì³£Ò²²»»áĞ¹Â¶×ÊÔ´»òÔÊĞíÈÎºÎº¯Êı
-//      ½á¹¹°Ü»µ¡£ÕâÑùµÄº¯ÊıÇø·ÖÎªÈıÖÖ¿ÉÄÜµÄ±£Ö¤£º»ù±¾(³ĞÅµ)ĞÍ¡¢Ç¿ÁÒĞÍ¡¢²»Å×Òì³£ĞÍ¡£
-// 2    ¡°Ç¿ÁÒ±£ÏÕ¡±ÍùÍùÄÜ¹»ÒÔcopy-and-swapÊµÏÖ³öÀ´£¬µ«¡°Ç¿ÁÒ±£Ö¤¡±²¢·Ç¶ÔËùÓĞº¯Êı¶¼¿ÉÒÔÊµÏÖ
-//      »òÊÇ¾ß±¸ÏÖÊµÒâÒå ...
-// 3    º¯ÊıÌá¹©µÄ¡°Òì³£°²È«±£Ö¤¡±Í¨³£×î¸ßÖ»µÈÓÚÆäËùµ÷ÓÃº¯ÊıÖĞµÄ¡°Òì³£°²È«±£Ö¤¡±ÖĞµÄ×îÈõÕß ¡£
+// --- æ¡æ¬¾29ï¼šä¸ºâ€œå¼‚å¸¸å®‰å…¨â€è€ŒåŠªåŠ›æ—¶å€¼å¾—çš„
+// æ³¨æ„ï¼š
+// 1    å¼‚å¸¸å®‰å…¨å‡½æ•°( Exception-safe functions)å³ä½¿å‘ç”Ÿå¼‚å¸¸ä¹Ÿä¸ä¼šæ³„éœ²èµ„æºæˆ–å…è®¸ä»»ä½•å‡½æ•°
+//      ç»“æ„è´¥åã€‚è¿™æ ·çš„å‡½æ•°åŒºåˆ†ä¸ºä¸‰ç§å¯èƒ½çš„ä¿è¯ï¼šåŸºæœ¬(æ‰¿è¯º)å‹ã€å¼ºçƒˆå‹ã€ä¸æŠ›å¼‚å¸¸å‹ã€‚
+// 2    â€œå¼ºçƒˆä¿é™©â€å¾€å¾€èƒ½å¤Ÿä»¥copy-and-swapå®ç°å‡ºæ¥ï¼Œä½†â€œå¼ºçƒˆä¿è¯â€å¹¶éå¯¹æ‰€æœ‰å‡½æ•°éƒ½å¯ä»¥å®ç°
+//      æˆ–æ˜¯å…·å¤‡ç°å®æ„ä¹‰ ...
+// 3    å‡½æ•°æä¾›çš„â€œå¼‚å¸¸å®‰å…¨ä¿è¯â€é€šå¸¸æœ€é«˜åªç­‰äºå…¶æ‰€è°ƒç”¨å‡½æ•°ä¸­çš„â€œå¼‚å¸¸å®‰å…¨ä¿è¯â€ä¸­çš„æœ€å¼±è€… ã€‚
 namespace testItem29
 {
     class Image
@@ -225,11 +225,11 @@ namespace testItem29
     {
         //4     better ...
         Lock m1(&mutex) ;
-        std::tr1::shared_ptr<PMImpl> pNew(new PMImpl(*pImpl)) ; //»ñµÃ¸±±¾ ...
-        pNew->pImage.reset(new Image(imgSrc)) ;// ĞŞ¸Ä¸±±¾ ...
+        std::tr1::shared_ptr<PMImpl> pNew(new PMImpl(*pImpl)) ; //è·å¾—å‰¯æœ¬ ...
+        pNew->pImage.reset(new Image(imgSrc)) ;// ä¿®æ”¹å‰¯æœ¬ ...
         ++pNew->imageChanges ;
         using std::swap ;
-        //swap(pImpl ,pNew) ;// ...ÖÃ»»Êı¾İ...
+        //swap(pImpl ,pNew) ;// ...ç½®æ¢æ•°æ®...
         pNew.swap(pImpl) ;// ??? ...
         /*
         // 3    good ...
@@ -276,15 +276,15 @@ namespace std
     }
 }
 // ====================================================================
-// --- Ìõ¿î30£ºÍ¸³¹ÁË½â inlining (inline) µÄÀïÀïÍâÍâ ...
-// ×¢Òâ£ºinline ÊÇ¸öÉêÇë£¬±àÒëÆ÷¿ÉÒÔ¼ÓÒÔºöÂÔ(Èô inline º¯Êı¹ıÓÚ¸´ÔÓ) ...
-// 1    ½«´ó¶àÊıinliningÏŞÖÆÔÚĞ¡ĞÍ£¬±»Æµ·±µ÷ÓÃµÄº¯ÊıÉíÉÏ¡£Õâ¿ÉÊ¹ÈÕºóµÄµ÷ÊÔ¹ı³Ì
-//      ºÍ¶ş½øÖÆÉı¼¶(binary upgradability)¸üÈİÒ×£¬Ò²¿ÉÊ¹Ç±ÔÚµÄ´úÂëÅòÕÍÎÊÌâ×îĞ¡»¯£¬
-//      Ê¹³ÌĞòµÄËÙ¶ÈÌáÉı»ú»á×î´ó»¯ ...
-// 2    ²»ÒªÖ»ÒòÎª function templateS ³öÏÖÔÚÍ·ÎÄ¼ş£¬¾Í½«ËüÃÇÉùÃ÷ inline ¡£
-// 3    ±àÒëÆ÷Í¨³£²»¶Ô¡°Í¨¹ıº¯ÊıÖ¸Õë¶ø½øĞĞµÄµ÷ÓÃ¡±ÊµÊ©inlining ...ÓĞÊ±°üÀ¨¹¹Ôìº¯Êı
-//      ÓëÎö¹¹º¯Êı ... ÓĞÊ±ºò±àÒëÆ÷»á×Ô¶¯Éú³ÉÁ½ÕßµÄoutline ¸±±¾ ...ÍùÍù(Êµ¼ÊÉÏ)
-//      ¹¹ÔìºÍÎö¹¹º¯ÊıµÄinliningµÄÔã¸âºòÑ¡£¬¼Ç×¡£º±àÒëÆ÷»á×Ô¶¯Îª¹¹Ôì£¬Îö¹¹À©³ä´úÂë
+// --- æ¡æ¬¾30ï¼šé€å½»äº†è§£ inlining (inline) çš„é‡Œé‡Œå¤–å¤– ...
+// æ³¨æ„ï¼šinline æ˜¯ä¸ªç”³è¯·ï¼Œç¼–è¯‘å™¨å¯ä»¥åŠ ä»¥å¿½ç•¥(è‹¥ inline å‡½æ•°è¿‡äºå¤æ‚) ...
+// 1    å°†å¤§å¤šæ•°inliningé™åˆ¶åœ¨å°å‹ï¼Œè¢«é¢‘ç¹è°ƒç”¨çš„å‡½æ•°èº«ä¸Šã€‚è¿™å¯ä½¿æ—¥åçš„è°ƒè¯•è¿‡ç¨‹
+//      å’ŒäºŒè¿›åˆ¶å‡çº§(binary upgradability)æ›´å®¹æ˜“ï¼Œä¹Ÿå¯ä½¿æ½œåœ¨çš„ä»£ç è†¨èƒ€é—®é¢˜æœ€å°åŒ–ï¼Œ
+//      ä½¿ç¨‹åºçš„é€Ÿåº¦æå‡æœºä¼šæœ€å¤§åŒ– ...
+// 2    ä¸è¦åªå› ä¸º function templateS å‡ºç°åœ¨å¤´æ–‡ä»¶ï¼Œå°±å°†å®ƒä»¬å£°æ˜ inline ã€‚
+// 3    ç¼–è¯‘å™¨é€šå¸¸ä¸å¯¹â€œé€šè¿‡å‡½æ•°æŒ‡é’ˆè€Œè¿›è¡Œçš„è°ƒç”¨â€å®æ–½inlining ...æœ‰æ—¶åŒ…æ‹¬æ„é€ å‡½æ•°
+//      ä¸ææ„å‡½æ•° ... æœ‰æ—¶å€™ç¼–è¯‘å™¨ä¼šè‡ªåŠ¨ç”Ÿæˆä¸¤è€…çš„outline å‰¯æœ¬ ...å¾€å¾€(å®é™…ä¸Š)
+//      æ„é€ å’Œææ„å‡½æ•°çš„inliningçš„ç³Ÿç³•å€™é€‰ï¼Œè®°ä½ï¼šç¼–è¯‘å™¨ä¼šè‡ªåŠ¨ä¸ºæ„é€ ï¼Œææ„æ‰©å……ä»£ç 
 namespace testItem30
 {
     class Person
@@ -294,11 +294,11 @@ namespace testItem30
         //...
     public:
         int age() const { return theAge ; }
-        // Ò»¸öÒşÓ÷µÄinlineÉêÇë£ºage() ¶¨ÒåÓÚclass¶¨ÒåÊ½ÄÚ
+        // ä¸€ä¸ªéšå–»çš„inlineç”³è¯·ï¼šage() å®šä¹‰äºclasså®šä¹‰å¼å†…
         // ...
     } ;
     template <typename T>
-    inline const T& Max(const T& a ,const T& b)//Ã÷È·ÉêÇëinline ...
+    inline const T& Max(const T& a ,const T& b)//æ˜ç¡®ç”³è¯·inline ...
     { return a < b ? b : a ; } //
 
     inline void inlineFunc()
@@ -307,18 +307,18 @@ namespace testItem30
     {
         void (*pFunc)() ;
         pFunc = inlineFunc ;
-        inlineFunc() ; //Õâ¸öµ÷ÓÃ½«±»inlined £¬ÒòÎªËüÊÇÒ»¸öÕı³£µ÷ÓÃ ...
-        pFunc() ;//Õâ¸öµ÷ÓÃ»òĞí(Í¨³£)²»±»inlined£¬ÒòÎªËüÍ¨¹ıº¯ÊıÖ¸Õëµ÷ÓÃ ...
+        inlineFunc() ; //è¿™ä¸ªè°ƒç”¨å°†è¢«inlined ï¼Œå› ä¸ºå®ƒæ˜¯ä¸€ä¸ªæ­£å¸¸è°ƒç”¨ ...
+        pFunc() ;//è¿™ä¸ªè°ƒç”¨æˆ–è®¸(é€šå¸¸)ä¸è¢«inlinedï¼Œå› ä¸ºå®ƒé€šè¿‡å‡½æ•°æŒ‡é’ˆè°ƒç”¨ ...
     }
 
 }//namespace testItem30
 // ====================================================================
-// --- Ìõ¿î31£º½«ÎÄ¼ş¼äµÄ±àÒëÒÀ´æ¹ØÏµ½µÖÁ×îµÍ ...
-// ×¢Òâ£º
-// 1    Ö§³Ö¡°±àÒëÒÀ´æĞÔ×îĞ¡»¯¡±µÄÒ»°ã¹¹ÏëÊÇ£ºÏàÒÀÓÚÉùÃ÷Ê½£¬²»ÒªÏàÒÀÓÚ¶¨ÒåÊ½¡£
-//      »ùÓÚ´Ë¹¹ÏëµÄÁ½¸öÊÖ¶ÎÊÇ£º Handle classes ºÍ Interface clases ...
-// 2    ³ÌĞò¿âÍ·ÎÄ¼şÓ¦¸ÃÒÔ¡°ÍêÈ«ÇÒ½öÓĞÉùÃ÷Ê½¡±( full and delaration-only forms)
-//      µÄĞÎÊ½´æÔÚ¡£ÕâÖÖ×ö·¨²»ÂÛÊÇ·ñÉæ¼° templateS ¶¼ÊÊÓÃ ...
+// --- æ¡æ¬¾31ï¼šå°†æ–‡ä»¶é—´çš„ç¼–è¯‘ä¾å­˜å…³ç³»é™è‡³æœ€ä½ ...
+// æ³¨æ„ï¼š
+// 1    æ”¯æŒâ€œç¼–è¯‘ä¾å­˜æ€§æœ€å°åŒ–â€çš„ä¸€èˆ¬æ„æƒ³æ˜¯ï¼šç›¸ä¾äºå£°æ˜å¼ï¼Œä¸è¦ç›¸ä¾äºå®šä¹‰å¼ã€‚
+//      åŸºäºæ­¤æ„æƒ³çš„ä¸¤ä¸ªæ‰‹æ®µæ˜¯ï¼š Handle classes å’Œ Interface clases ...
+// 2    ç¨‹åºåº“å¤´æ–‡ä»¶åº”è¯¥ä»¥â€œå®Œå…¨ä¸”ä»…æœ‰å£°æ˜å¼â€( full and delaration-only forms)
+//      çš„å½¢å¼å­˜åœ¨ã€‚è¿™ç§åšæ³•ä¸è®ºæ˜¯å¦æ¶‰åŠ templateS éƒ½é€‚ç”¨ ...
 // 3
 namespace testItem31
 {
@@ -431,13 +431,13 @@ namespace testItem31
 }//namespace testItem31
 
 
-// ===  Áù¡¢¼Ì³ĞÓëÃæÏò¶ÔÏóÉè¼Æ ========================================
+// ===  å…­ã€ç»§æ‰¿ä¸é¢å‘å¯¹è±¡è®¾è®¡ ========================================
 // ====================================================================
-// --- Ìõ¿î32:È·¶¨ÄãµÄpublic ¼Ì³ĞËÜÄ£³öis-a ¹ØÏµ
-// ×¢Òâ£º
-// 1    ¡°public¼Ì³Ğ¡±ÒâÎ¶×Å is-¡£ÊÊÓÃÓÚbase classesÉíÉÏµÄÃ¿Ò»¼şÊÂÒ»¶¨Ò²ÓÃÓÚ derived classes
-//      ÉíÉÏ£¬ÒòÎªÃ¿Ò»¸ö derived class¶ÔÏóÒ²¶¼ÊÇÒ»¸öbase class ¶ÔÏó ...
-// 2    is-a²¢·ÇÊÇÎ¨Ò»´æÔÚÓÚclassesÖ®¼äµÄ¹ØÏµ£¬ÁíÍâÁ½ÖÖ³£¼ûµÄ¹ØÏµÊÇhas-aºÍis-implementd-in-terms-of
+// --- æ¡æ¬¾32:ç¡®å®šä½ çš„public ç»§æ‰¿å¡‘æ¨¡å‡ºis-a å…³ç³»
+// æ³¨æ„ï¼š
+// 1    â€œpublicç»§æ‰¿â€æ„å‘³ç€ is-ã€‚é€‚ç”¨äºbase classesèº«ä¸Šçš„æ¯ä¸€ä»¶äº‹ä¸€å®šä¹Ÿç”¨äº derived classes
+//      èº«ä¸Šï¼Œå› ä¸ºæ¯ä¸€ä¸ª derived classå¯¹è±¡ä¹Ÿéƒ½æ˜¯ä¸€ä¸ªbase class å¯¹è±¡ ...
+// 2    is-aå¹¶éæ˜¯å”¯ä¸€å­˜åœ¨äºclassesä¹‹é—´çš„å…³ç³»ï¼Œå¦å¤–ä¸¤ç§å¸¸è§çš„å…³ç³»æ˜¯has-aå’Œis-implementd-in-terms-of
 // 3
 namespace testItem32
 {
@@ -450,7 +450,7 @@ namespace testItem32
     {
         virtual void fly() const = 0 ;
     } ;
-    class Penguin : public Bird// Æó¶ì ... no fly
+    class Penguin : public Bird// ä¼é¹… ... no fly
     {
         // ...
     } ;
@@ -475,7 +475,7 @@ namespace testItem32
     {
         int oldHeight = r.getHeight() ;
         r.setWidth(r.getWidth()+10) ;
-        assert(r.getHeight()==oldHeight) ;//ÅĞ¶ÏrµÄ¸ß¶ÈÊÇ·ñÎ´Ôø¸Ä±ä ...
+        assert(r.getHeight()==oldHeight) ;//åˆ¤æ–­rçš„é«˜åº¦æ˜¯å¦æœªæ›¾æ”¹å˜ ...
     }
     //Warn: class Square : public Rectangle ,Square and Rectangle not is-a ...
     class Square : public Rectangle
@@ -490,19 +490,19 @@ namespace testItem32
     void exampleFunc()
     {
         Square s ;
-        assert(s.getWidth()==s.getHeight()) ;//¶ÔÓÚËùÓĞÕı·½ĞÎ±ØĞëÎªÕæ
-        makeBigger(s) ;// Ôö¼ÓÃæ»ı ...
-        assert(s.getWidth()==s.getHeight()) ;//¶ÔÓÚËùÓĞÕı·½ĞÎ±ØĞëÎªÕæ
+        assert(s.getWidth()==s.getHeight()) ;//å¯¹äºæ‰€æœ‰æ­£æ–¹å½¢å¿…é¡»ä¸ºçœŸ
+        makeBigger(s) ;// å¢åŠ é¢ç§¯ ...
+        assert(s.getWidth()==s.getHeight()) ;//å¯¹äºæ‰€æœ‰æ­£æ–¹å½¢å¿…é¡»ä¸ºçœŸ
         // ...
     }
 
 
 }//namespace testItem32
 // ====================================================================
-// --- Ìõ¿î33£º±ÜÃâÕÚÑÚ¼Ì³Ğ¶øÀ´µÄÃû³Æ
-// ×¢Òâ£º
-// 1    derived classes ÄÚµÄÃû³Æ»áÕÚÑÚbase classes ÄÚµÄÃû³Æ¡£ÔÚpublic¼Ì³ĞÏÂ´ÓÀ´Ã»ÓĞÈËÏ£ÍûÈç´Ë
-// 2    ÎªÁËÈÃ±»ÕÚÑÚµÄÃû³ÆÔÙ¼ûÌìÈÕ£¬¿ÉÒÔÊ¹ÓÃusingÉùÃ÷Ê½»ò×ª½»º¯Êı£¨forwarding function£©
+// --- æ¡æ¬¾33ï¼šé¿å…é®æ©ç»§æ‰¿è€Œæ¥çš„åç§°
+// æ³¨æ„ï¼š
+// 1    derived classes å†…çš„åç§°ä¼šé®æ©base classes å†…çš„åç§°ã€‚åœ¨publicç»§æ‰¿ä¸‹ä»æ¥æ²¡æœ‰äººå¸Œæœ›å¦‚æ­¤
+// 2    ä¸ºäº†è®©è¢«é®æ©çš„åç§°å†è§å¤©æ—¥ï¼Œå¯ä»¥ä½¿ç”¨usingå£°æ˜å¼æˆ–è½¬äº¤å‡½æ•°ï¼ˆforwarding functionï¼‰
 // 3
 namespace testItem33
 {
@@ -526,8 +526,8 @@ namespace testItem33
     class Derived_1 : public Base
     {
     public:
-        using Base::mf1 ; // ÈÃ Base class ÄÚÃûÎª mf1ºÍmf3µÄËùÓĞ¶«Î÷ÔÚ
-        using Base::mf3 ;//Derived ×÷ÓÃÓòÄÚ¶¼¿É¼û £¬okokok
+        using Base::mf1 ; // è®© Base class å†…åä¸º mf1å’Œmf3çš„æ‰€æœ‰ä¸œè¥¿åœ¨
+        using Base::mf3 ;//Derived ä½œç”¨åŸŸå†…éƒ½å¯è§ ï¼Œokokok
         virtual void  mf1()
         { cout << " virtual void  Derived_1::mf1()\n" ; }
         // Warning W8022 : 'Derived_1::mf1()' hides virtual function 'Base::mf1(int)'|
@@ -539,17 +539,17 @@ namespace testItem33
     class Derived_2 : private Base
     {
     public:
-        virtual void mf1()// ×ª½»º¯Êı°µ×Ô³ÉÎªinline
+        virtual void mf1()// è½¬äº¤å‡½æ•°æš—è‡ªæˆä¸ºinline
         { Base::mf1() ; cout << " virtual void  Derived_2::mf1()\n\n" ;}
         // Warning W8022 : 'Derived_2::mf1()' hides virtual function 'Base::mf1(int)'|
     } ;
 }//namespace testItem33
-// --- Ìõ¿î34£ºÇø·Ö½è¿Ú¼Ì³ĞºÍÊµÏÖ¼Ì³Ğ
-// ×¢Òâ£º
-// 1    ½Ó¿Ú¼Ì³ĞºÍÊµÏÖ¼Ì³Ğ²»Í¬¡£ÔÚpublic¼Ì³ĞÖ®ÏÂ£¬derived classes ×ÜÊÇ¼Ì³Ğbase class µÄ½Ó¿Ú
-// 2    pure virtual º¯ÊıÖ»¾ßÌåÖ¸¶¨½Ó¿Ú¼Ì³Ğ£¨µ«¿ÉÒÔµ÷ÓÃÆäÊµÏÖ--×ª½»º¯ÊıÊµÏÖ£©
-// 3    ¼òÆÓµÄ£¨·Ç´¿£©impure virtual »¹ÊÇÄÇ»§¾ßÌåÖ¸¶¨½è¿Ú¼Ì³Ğ¼°È±Ê¡ÊµÏÖ¼Ì³Ğ
-// 4    non-virtual º¯Êı¾ßÌåÖ¸¶¨½Ó¿Ú¼Ì³ĞÒÔ¼°Ç¿ÖÆĞÔÊµÏÖ¼Ì³Ğ
+// --- æ¡æ¬¾34ï¼šåŒºåˆ†å€Ÿå£ç»§æ‰¿å’Œå®ç°ç»§æ‰¿
+// æ³¨æ„ï¼š
+// 1    æ¥å£ç»§æ‰¿å’Œå®ç°ç»§æ‰¿ä¸åŒã€‚åœ¨publicç»§æ‰¿ä¹‹ä¸‹ï¼Œderived classes æ€»æ˜¯ç»§æ‰¿base class çš„æ¥å£
+// 2    pure virtual å‡½æ•°åªå…·ä½“æŒ‡å®šæ¥å£ç»§æ‰¿ï¼ˆä½†å¯ä»¥è°ƒç”¨å…¶å®ç°--è½¬äº¤å‡½æ•°å®ç°ï¼‰
+// 3    ç®€æœ´çš„ï¼ˆéçº¯ï¼‰impure virtual è¿˜æ˜¯é‚£æˆ·å…·ä½“æŒ‡å®šå€Ÿå£ç»§æ‰¿åŠç¼ºçœå®ç°ç»§æ‰¿
+// 4    non-virtual å‡½æ•°å…·ä½“æŒ‡å®šæ¥å£ç»§æ‰¿ä»¥åŠå¼ºåˆ¶æ€§å®ç°ç»§æ‰¿
 namespace testItem34
 {
     class Shape
@@ -682,13 +682,13 @@ namespace testItem34
     } ;
 }//namespace testItem34
 // ====================================================================
-// --- Ìõ¿î35£º¿¼ÂÇvirtual º¯ÊıÖ®ÍâµÄÆäËûÑ¡Ôñ ...
-// ×¢Òâ£º
-// 1    virtualº¯ÊıµÄÌæ´ú·½°¸°üÀ¨NVI(Non-Virtual Interface)ÊÖ·¨¼°StrategyÉè¼ÆÄ£Ê½µÄ¶àÖÖĞÎÊ½¡£
-//      NVIÊÖ·¨×ÔÉíÊÇÒ»ÖÖÌØÊâĞÎÊ½µÄ Template MethodÄ£Ê½(ÓëC++ templateS ²¢ÎŞ¹ØÁª)
-// 2    ½«»úÄÜ´Ó³ÉÔ±º¯ÊıÒÆµ½class Íâ²¿º¯Êı£¬´øÀ´µÄÒ»¸öÈ±µã¾ÍÊÇ£º·Ç³ÉÔ±º¯ÊıÎŞ·¨·ÃÎÊnon-public³ÉÔ±
-// 3    tr1::function¶ÔÏóµÄĞĞÎª¾ÍÏñÒ»°ãº¯ÊıÖ¸Õë¡£ÕâÑùµÄ¶ÔÏó¿É½ÓÄÉ¡±Óë¸ø¶¨Ö®Ä¿±êÇ©ÃûÊ½¼æÈİ¡°µÄ
-//      ËùÓĞ¿Éµ÷ÓÃÎï( callable entities ) ...
+// --- æ¡æ¬¾35ï¼šè€ƒè™‘virtual å‡½æ•°ä¹‹å¤–çš„å…¶ä»–é€‰æ‹© ...
+// æ³¨æ„ï¼š
+// 1    virtualå‡½æ•°çš„æ›¿ä»£æ–¹æ¡ˆåŒ…æ‹¬NVI(Non-Virtual Interface)æ‰‹æ³•åŠStrategyè®¾è®¡æ¨¡å¼çš„å¤šç§å½¢å¼ã€‚
+//      NVIæ‰‹æ³•è‡ªèº«æ˜¯ä¸€ç§ç‰¹æ®Šå½¢å¼çš„ Template Methodæ¨¡å¼(ä¸C++ templateS å¹¶æ— å…³è”)
+// 2    å°†æœºèƒ½ä»æˆå‘˜å‡½æ•°ç§»åˆ°class å¤–éƒ¨å‡½æ•°ï¼Œå¸¦æ¥çš„ä¸€ä¸ªç¼ºç‚¹å°±æ˜¯ï¼šéæˆå‘˜å‡½æ•°æ— æ³•è®¿é—®non-publicæˆå‘˜
+// 3    tr1::functionå¯¹è±¡çš„è¡Œä¸ºå°±åƒä¸€èˆ¬å‡½æ•°æŒ‡é’ˆã€‚è¿™æ ·çš„å¯¹è±¡å¯æ¥çº³â€ä¸ç»™å®šä¹‹ç›®æ ‡ç­¾åå¼å…¼å®¹â€œçš„
+//      æ‰€æœ‰å¯è°ƒç”¨ç‰©( callable entities ) ...
 namespace testItem35
 {
     class GameCharacter_
@@ -701,7 +701,7 @@ namespace testItem35
             return retValue ;
         } ;
     } ;
-    // 1)   ½åÓÉNon-Virtual Interface ÊÖ·¨ÊµÏÖ Template Method Ä£Ê½ ...
+    // 1)   è—‰ç”±Non-Virtual Interface æ‰‹æ³•å®ç° Template Method æ¨¡å¼ ...
     class GameCharacter_1
     {
     public:
@@ -720,7 +720,7 @@ namespace testItem35
             return retValue ;
         }
     } ;
-    // 2)   ½åÓÉFunction Pointers ÊµÏÖ Strategy Ä£Ê½ ...
+    // 2)   è—‰ç”±Function Pointers å®ç° Strategy æ¨¡å¼ ...
     class GameCharacter_2 ;
     int defaultHealthCalc(const GameCharacter_2& gc) { return int(1) ;} // ...
     class GameCharacter_2
@@ -734,7 +734,7 @@ namespace testItem35
     private:
         HealthCalcFunc healthFunc ;
     } ;
-    //1     Í¬Ò»ÈËÎïÀàĞÍÖ®²»Í¬ÊµÌå¿ÉÒÔÓĞ²»Í¬µÄ½¡¿µ¼ÆËãº¯Êı  ...
+    //1     åŒä¸€äººç‰©ç±»å‹ä¹‹ä¸åŒå®ä½“å¯ä»¥æœ‰ä¸åŒçš„å¥åº·è®¡ç®—å‡½æ•°  ...
     class EvilBadGuy_2 : public GameCharacter_2
     {
     public:
@@ -749,10 +749,10 @@ namespace testItem35
         EvilBadGuy_2 ebg1(loseHealthQuickly) ;
         EvilBadGuy_2 ebg2(loseHealthSlowly) ;
     }
-    //2     ²¢ÇÒÄ±ÒÑÖªÈËÎïµÄ½¡¿µÖ¸Êı¼ÆËãº¯Êı¿ÉÒÔÔÚÔËĞĞÆÚ±ä¸ü ...
+    //2     å¹¶ä¸”è°‹å·²çŸ¥äººç‰©çš„å¥åº·æŒ‡æ•°è®¡ç®—å‡½æ•°å¯ä»¥åœ¨è¿è¡ŒæœŸå˜æ›´ ...
     // ....
     /**/
-    // 3)   ½åÓÉ tr1::function Íê³ÉStratagy Ä£Ê½ ...
+    // 3)   è—‰ç”± tr1::function å®ŒæˆStratagy æ¨¡å¼ ...
 
 
     class GameCharacter_3 ;
@@ -761,8 +761,8 @@ namespace testItem35
     {
     public:
         typedef boost::function<int (const GameCharacter_3&) > HealthCalcFunc ;
-        // HealthCalcFunc ¿ÉÒÔÊÇÈÎºÎ¡±¿Éµ÷ÓÃÎï¡°£¬¿ÎßÂµ÷ÓÃ²¢½ÓÊÜ
-        // ÈÎºÎ¼æÈİÓÚ GameCharacter_3 Ö®Îï£¬·µ»ØÈÎºÎ¼æÈİÓÚint µÄ¶«Î÷ ....
+        // HealthCalcFunc å¯ä»¥æ˜¯ä»»ä½•â€å¯è°ƒç”¨ç‰©â€œï¼Œè¯¾å‘—è°ƒç”¨å¹¶æ¥å—
+        // ä»»ä½•å…¼å®¹äº GameCharacter_3 ä¹‹ç‰©ï¼Œè¿”å›ä»»ä½•å…¼å®¹äºint çš„ä¸œè¥¿ ....
         explicit GameCharacter_3(HealthCalcFunc hcf =defaultHealthCalc)
         : healthFunc(hcf) {}
         int healthValue() const
@@ -807,7 +807,7 @@ namespace testItem35
         // ...
     }
 
-    // 4)   ½åÓÉ¹ÅµäµÄ Stratagy Ä£Ê½ ...
+    // 4)   è—‰ç”±å¤å…¸çš„ Stratagy æ¨¡å¼ ...
     class GameCharacter_4 ;
     class HealthCalcFunc
     {
@@ -844,9 +844,9 @@ namespace testItem35
 
 }//namespace testItem35
 // ====================================================================
-// --- Ìõ¿î36£º¾ø²»ÖØĞÂ¶¨Òå¼Ì³Ğ¶øÀ´µÄnon-virtualº¯Êı ...
-// ×¢Òâ£º
-// 1    ¾ø¶Ô²»ÒªÖØĞÂ¶¨Òå¼Ì³Ğ¶øÀ´µÄnon-virtualº¯Êı
+// --- æ¡æ¬¾36ï¼šç»ä¸é‡æ–°å®šä¹‰ç»§æ‰¿è€Œæ¥çš„non-virtualå‡½æ•° ...
+// æ³¨æ„ï¼š
+// 1    ç»å¯¹ä¸è¦é‡æ–°å®šä¹‰ç»§æ‰¿è€Œæ¥çš„non-virtualå‡½æ•°
 // 2
 // 3
 namespace testItem36
@@ -863,7 +863,7 @@ namespace testItem36
     {
     public:
     //   Waring ....
-        void nonvirFunc() const ;//ÕÚÑÚ(hides) ÁËBase::nonvirFunc ..¼ûÌõ¿î33
+        void nonvirFunc() const ;//é®æ©(hides) äº†Base::nonvirFunc ..è§æ¡æ¬¾33
         // ...
     } ;
     void Derived::nonvirFunc() const
@@ -873,15 +873,15 @@ namespace testItem36
         Derived d ;
         Derived* pD = &d;
         Base*    pB = &d ;
-        pB->nonvirFunc() ;// µ÷ÓÃBase::nonvirFunc
-        pD->nonvirFunc() ;// µ÷ÓÃDerived::nonvirFunc
+        pB->nonvirFunc() ;// è°ƒç”¨Base::nonvirFunc
+        pD->nonvirFunc() ;// è°ƒç”¨Derived::nonvirFunc
     }
 }//namespace testItem36
 // ====================================================================
-// --- Ìõ¿î37£º¾ø²»ÖØĞÂ¶¨Òå¼Ì³Ğ¶øÀ´µÄÈ±Ê¡²ÎÊıÖµ ...
-// ×¢Òâ£º
-// 1    ¾ø¶Ô²»ÒªÖØĞÂ¶¨Òå¼Ì³Ğ¶øÀ´µÄÈ±Ê¡²ÎÊıÖµ£¬ÒòÎªÈ±Ê¡²ÎÊıÖµ¶¼ÊÇ¾²Ì¬°ó¶¨(±àÒëÆÚ)£¬
-//      ¶ø virtual º¯Êı--ÄãÎ¨Ò»Ó¦¸Ã¸²¸ÇµÄ¶«Î÷--È´ÊÇ¶¯Ì¬°ó¶¨ ...
+// --- æ¡æ¬¾37ï¼šç»ä¸é‡æ–°å®šä¹‰ç»§æ‰¿è€Œæ¥çš„ç¼ºçœå‚æ•°å€¼ ...
+// æ³¨æ„ï¼š
+// 1    ç»å¯¹ä¸è¦é‡æ–°å®šä¹‰ç»§æ‰¿è€Œæ¥çš„ç¼ºçœå‚æ•°å€¼ï¼Œå› ä¸ºç¼ºçœå‚æ•°å€¼éƒ½æ˜¯é™æ€ç»‘å®š(ç¼–è¯‘æœŸ)ï¼Œ
+//      è€Œ virtual å‡½æ•°--ä½ å”¯ä¸€åº”è¯¥è¦†ç›–çš„ä¸œè¥¿--å´æ˜¯åŠ¨æ€ç»‘å®š ...
 // 2
 // 3
 namespace testItem37
@@ -896,15 +896,15 @@ namespace testItem37
     class Rectangle : public Shape
     {
     public:
-    //  ×¢Òâ£º¸³Óè²»Í¬µÄÈ±Ê¡²ÎÊıÖµ£¬ÕâÊÇºÜÔã¸â ...
-        void draw(ShapeColor color = Green) const //Warn--ÖØĞÂ¶¨Òå¼Ì³Ğ¶øÀ´µÄÈ±Ê¡²ÎÊıÖµ,but ...
+    //  æ³¨æ„ï¼šèµ‹äºˆä¸åŒçš„ç¼ºçœå‚æ•°å€¼ï¼Œè¿™æ˜¯å¾ˆç³Ÿç³• ...
+        void draw(ShapeColor color = Green) const //Warn--é‡æ–°å®šä¹‰ç»§æ‰¿è€Œæ¥çš„ç¼ºçœå‚æ•°å€¼,but ...
         { cout << " virtual void Rectangle::draw(ShapeColor color)const ,color: "<< color << "\n" ; }
         // ...
     } ;
     class Circle : public Shape
     {
     public:
-        void draw(ShapeColor color) const //OK--¼Ì³ĞÈ±Ê¡²ÎÊıÖµ ...
+        void draw(ShapeColor color) const //OK--ç»§æ‰¿ç¼ºçœå‚æ•°å€¼ ...
         { cout << " virtual void Circle::draw(ShapeColor color)const ,color: "<< color << "\n" ; }
         // ...
     } ;
@@ -927,7 +927,7 @@ namespace testItem37
         pS = &r ;   cout << " pS = &r ;pS->draw() ;...\n" ;  pS->draw() ;
         pS = &c ;   cout << " pS = &c ;pS->draw() ;...\n" ;  pS->draw() ;
     }
-    //  Ìæ´úÉè¼Æ·½·¨£º NVI(non-virtual interface ) ...virtual to non-virtual ...
+    //  æ›¿ä»£è®¾è®¡æ–¹æ³•ï¼š NVI(non-virtual interface ) ...virtual to non-virtual ...
     class Shape_
     {
     public:
@@ -953,21 +953,21 @@ namespace testItem37
         void doDraw(ShapeColor color) const
         { cout << " virtual void Circle_::doDraw(ShapeColor color)const ,color: "<< color << "\n" ; }
     } ;
-    // ÓÉÓÚnon-virtualº¯ÊıÓ¦¸Ã¾ø¶Ô²»±»derived classes ¸²Ğ´(¼ûÌõ¿î36)£¬
-    // Õâ¸öÉè¼ÆºÜÇå³şµØÊ¹µÃdrawº¯ÊıµÄ color È±Ê¡²ÎÊıÖµ×ÜÊÇ Red ¡£
+    // ç”±äºnon-virtualå‡½æ•°åº”è¯¥ç»å¯¹ä¸è¢«derived classes è¦†å†™(è§æ¡æ¬¾36)ï¼Œ
+    // è¿™ä¸ªè®¾è®¡å¾ˆæ¸…æ¥šåœ°ä½¿å¾—drawå‡½æ•°çš„ color ç¼ºçœå‚æ•°å€¼æ€»æ˜¯ Red ã€‚
     // ...
 
 }//namespace testItem37
 // ====================================================================
-// --- Ìõ¿î38£ºÍ¨¹ı¸´ºÏËÜÄ£³öhas-a»òis-implemented-in-terms-of (¡°¸ù¾İÄ³ÎïÊµÏÖ³ö¡±)
-// ×¢Òâ£º
-// 1    ¸´ºÏ(composition)µÄÒâÒåºÍpublic¼Ì³ĞÍêÈ«²»Í¬ ...
-// 2    ÔÚÓ¦ÓÃÓò(application domain) £¬¸´ºÏÒâÎ¶ has-a¡£ÔÚÊµÏÖÓò(implementation domain),¸´ºÏÒâÎ¶
-//      is-implementd-in-terms-of (¸ù¾İÄ³ÎïÊµÏÖ³ö) . ...
+// --- æ¡æ¬¾38ï¼šé€šè¿‡å¤åˆå¡‘æ¨¡å‡ºhas-aæˆ–is-implemented-in-terms-of (â€œæ ¹æ®æŸç‰©å®ç°å‡ºâ€)
+// æ³¨æ„ï¼š
+// 1    å¤åˆ(composition)çš„æ„ä¹‰å’Œpublicç»§æ‰¿å®Œå…¨ä¸åŒ ...
+// 2    åœ¨åº”ç”¨åŸŸ(application domain) ï¼Œå¤åˆæ„å‘³ has-aã€‚åœ¨å®ç°åŸŸ(implementation domain),å¤åˆæ„å‘³
+//      is-implementd-in-terms-of (æ ¹æ®æŸç‰©å®ç°å‡º) . ...
 // 3
 namespace testItem38
 {
-    // 1    has-a (ÊÇÒ»ÖÖ )¹ØÏµ ....
+    // 1    has-a (æ˜¯ä¸€ç§ )å…³ç³» ....
     class Address {} ;// ...
     class PhoneNumber {} ;// ...
     class Person
@@ -992,10 +992,10 @@ namespace testItem38
         virtual void who() const
         { std::cout << " virtual void Student::who() const ...a Student \n" ; }
     } ; //
-    // 2    is-implementd-in-terms-of (¸ù¾İÄ³ÎïÊµÏÖ³ö)
+    // 2    is-implementd-in-terms-of (æ ¹æ®æŸç‰©å®ç°å‡º)
     /*
     template<typename T>
-    class Set : public std::list<T>//½«list Ó¦ÓÃÓÚSet£¬´íÎóÓÃ·¨ ...
+    class Set : public std::list<T>//å°†list åº”ç”¨äºSetï¼Œé”™è¯¯ç”¨æ³• ...
     { // ...
     }// .. */
     //#include <list> // here ,error ...
@@ -1034,16 +1034,16 @@ namespace testItem38
         return rep.size() ;
     }
     // ...
-    //ÕâĞ©º¯ÊıÈç´Ë¼òµ¥£¬Òò´Ë¶¼ÊÊºÏinliningºòÑ¡ÈË ...
+    //è¿™äº›å‡½æ•°å¦‚æ­¤ç®€å•ï¼Œå› æ­¤éƒ½é€‚åˆinliningå€™é€‰äºº ...
 }//namespace testItem38
 // ====================================================================
-// --- Ìõ¿î39£ºÃ÷ÖÇ¶øÉóÉ÷µØÊ¹ÓÃ private ¼Ì³Ğ ...
-// ×¢Òâ£º
-// 1    private¼Ì³ĞÒâÎ¶ is-implementd-in-terms-of(¸ù¾İÄ³ÎïÊµÏÖ³ö)¡£ËüÍ¨³£±È¸´ºÏ³ÉÔ±(composition)
-//      µÄ¼¶±ğµÍ¡£µ«ÊÇµ±derived classes ĞèÒª·ÃÎÊ protected base classµÄ³ÉÔ±£¬»òĞèÒªÖØĞÂ¶¨Òå¼Ì³Ğ
-//      ¶øÀ´µÄ virtual º¯ÊıÊ±£¬ÕâÃ´Éè¼ÆÊÇºÏÀíµÄ
-// 2    ºÍ¸´ºÏ(composition)²»Í¬£¬private¼Ì³Ğ¿ÉÒÔÔì³Éempty base class×îÓÅ»¯¡£Õâ¶ÔÖÂÁ¦ÓÚ¡°¶ÔÏó³ß´ç
-//      ×îĞ¡»¯¡±µÄ³ÌĞò¿â¿ª·¢Õß¶øÑÔ£¬¿ÉÄÜºÜÖØÒª ...
+// --- æ¡æ¬¾39ï¼šæ˜æ™ºè€Œå®¡æ…åœ°ä½¿ç”¨ private ç»§æ‰¿ ...
+// æ³¨æ„ï¼š
+// 1    privateç»§æ‰¿æ„å‘³ is-implementd-in-terms-of(æ ¹æ®æŸç‰©å®ç°å‡º)ã€‚å®ƒé€šå¸¸æ¯”å¤åˆæˆå‘˜(composition)
+//      çš„çº§åˆ«ä½ã€‚ä½†æ˜¯å½“derived classes éœ€è¦è®¿é—® protected base classçš„æˆå‘˜ï¼Œæˆ–éœ€è¦é‡æ–°å®šä¹‰ç»§æ‰¿
+//      è€Œæ¥çš„ virtual å‡½æ•°æ—¶ï¼Œè¿™ä¹ˆè®¾è®¡æ˜¯åˆç†çš„
+// 2    å’Œå¤åˆ(composition)ä¸åŒï¼Œprivateç»§æ‰¿å¯ä»¥é€ æˆempty base classæœ€ä¼˜åŒ–ã€‚è¿™å¯¹è‡´åŠ›äºâ€œå¯¹è±¡å°ºå¯¸
+//      æœ€å°åŒ–â€çš„ç¨‹åºåº“å¼€å‘è€…è€Œè¨€ï¼Œå¯èƒ½å¾ˆé‡è¦ ...
 // 3
 namespace testItem39
 {
@@ -1072,16 +1072,16 @@ namespace testItem39
     } ;
     void Timer::OnTick() const { }// ...
     // 1) ************good*************
-    class Widget_1 : private Timer //×¢Òâ£¬no public ...
+    class Widget_1 : private Timer //æ³¨æ„ï¼Œno public ...
     {
     private:
-        void OnTick() const ;//²é¿´WidgetµÄÊı¾İ ...µÈµÈ
+        void OnTick() const ;//æŸ¥çœ‹Widgetçš„æ•°æ® ...ç­‰ç­‰
     public:
         // ...
     } ;
     void Widget_1::OnTick() const // ...
     { cout << " void Widget_1::OnTick() const ...\n" ; }
-    // 2) ************better*************¿ÉÒÔºÜºÃµÄÌæ´úprivate ¼Ì³Ğ ...
+    // 2) ************better*************å¯ä»¥å¾ˆå¥½çš„æ›¿ä»£private ç»§æ‰¿ ...
     class Widget_2
     {
     private:
@@ -1098,16 +1098,16 @@ namespace testItem39
     } ;
     void Widget_2::WidgetTimer::OnTick() const // ...
     { cout << " void Widget_2::WidgetTimer::OnTick() const ...\n" ; }
-    // ¼¤½øÇé¿ö --------------------------------
+    // æ¿€è¿›æƒ…å†µ --------------------------------
     class Empty{} ;// ...
     class HoldsAnInt_1
-    {//±àÒëÆ÷²»ÄÜHoldsAnInt_1¶ÔÏó´óĞ¡ ...
+    {//ç¼–è¯‘å™¨ä¸èƒ½HoldsAnInt_1å¯¹è±¡å¤§å° ...
     private:
         Empty e ;
         int   x ;
     } ;
     class HoldsAnInt_2 : private Empty
-    {//±àÒëÆ÷ÓÅ»¯HoldsAnInt_2¶ÔÏó´óĞ¡ ...
+    {//ç¼–è¯‘å™¨ä¼˜åŒ–HoldsAnInt_2å¯¹è±¡å¤§å° ...
     private:
         int x ;
     } ;
@@ -1117,7 +1117,7 @@ namespace testItem39
         Person  p ;
         Student s ;
         testItem38::Student s_ ;
-        eat(p) ;// Ã»ÓĞÎÊÌâ£¬pÊÇPerson  ...
+        eat(p) ;// æ²¡æœ‰é—®é¢˜ï¼Œpæ˜¯Person  ...
         eat(s_) ;// ok ,class Student : public Person ...
         //eat(s) ;// error ,class Student : private Person ...
 //Error E2064 : Cannot initialize 'const Person &' with 'Student' in function exampleFunc()|
@@ -1128,16 +1128,16 @@ namespace testItem39
     }
 }//namespace testItem39
 // ====================================================================
-// --- Ìõ¿î40£ºÃ÷ÖÇ¶øÉóÉ÷µØÊ¹ÓÃ¶àÖØ¼Ì³Ğ ...
-// ×¢Òâ£º
-// 1    ¶àÖØ¼Ì³Ğ±ÈÆğµ¥Ò»¼Ì³Ğ¸´ÔÓ¡£Ëü¿ÉÄÜµ¼ÖÂĞÂµÄÆçÒå£¬ÒÔ¼°¶Ôvirtual¼Ì³ĞµÄĞèÒª¡£
-// 2    virtual¼Ì³Ğ»áÔö¼ÓÀàĞÍ´óĞ¡¡¢ËÙ¶È¡¢³õÊ¼»¯(¼°¸³Öµ)¸´ÔÓ¶ÈµÈµÈ³É±¾¡£Èç¹ûvirtual base classes
-//      ²»´øÈÎºÎÊı¾İ£¬½«ÊÇ×î¾ßÊ¹ÓÃ¼ÛÖµµÄÇé¿ö ...
-// 3    ¶àÖØ¼Ì³ĞµÄÈ·ÓĞÕıµ±µÄÓÃÍ¾¡£ÆäÖĞÒ»¸öÇé½ÚÉæ¼°¡°public¼Ì³ĞÄ³¸öInterface class¡±ºÍ¡°private¼Ì³Ğ
-//      Ä³¸öĞ­ÖúÊµÏÖ class ¡±µÄÁ½Ïî×éºÏ ....
+// --- æ¡æ¬¾40ï¼šæ˜æ™ºè€Œå®¡æ…åœ°ä½¿ç”¨å¤šé‡ç»§æ‰¿ ...
+// æ³¨æ„ï¼š
+// 1    å¤šé‡ç»§æ‰¿æ¯”èµ·å•ä¸€ç»§æ‰¿å¤æ‚ã€‚å®ƒå¯èƒ½å¯¼è‡´æ–°çš„æ­§ä¹‰ï¼Œä»¥åŠå¯¹virtualç»§æ‰¿çš„éœ€è¦ã€‚
+// 2    virtualç»§æ‰¿ä¼šå¢åŠ ç±»å‹å¤§å°ã€é€Ÿåº¦ã€åˆå§‹åŒ–(åŠèµ‹å€¼)å¤æ‚åº¦ç­‰ç­‰æˆæœ¬ã€‚å¦‚æœvirtual base classes
+//      ä¸å¸¦ä»»ä½•æ•°æ®ï¼Œå°†æ˜¯æœ€å…·ä½¿ç”¨ä»·å€¼çš„æƒ…å†µ ...
+// 3    å¤šé‡ç»§æ‰¿çš„ç¡®æœ‰æ­£å½“çš„ç”¨é€”ã€‚å…¶ä¸­ä¸€ä¸ªæƒ…èŠ‚æ¶‰åŠâ€œpublicç»§æ‰¿æŸä¸ªInterface classâ€å’Œâ€œprivateç»§æ‰¿
+//      æŸä¸ªååŠ©å®ç° class â€çš„ä¸¤é¡¹ç»„åˆ ....
 namespace testItem40
 {
-    // ¿ÉÄÜµ¼ÖÂµÄÆçÒå ....
+    // å¯èƒ½å¯¼è‡´çš„æ­§ä¹‰ ....
     class Base
     {
     private:
@@ -1168,10 +1168,10 @@ namespace testItem40
     {
         // ...
     public:
-    //  warning ...ÆçÒå ...runtime error in GUN GCC ...
+    //  warning ...æ­§ä¹‰ ...runtime error in GUN GCC ...
         int getValue() const { return getValue() ; }// Warn ...
         void setValue(int newValue) { setValue(newValue) ; }// Warn ...
-        // should ·Ö¿ªÉè¼Æ½Ó¿Ú »òÊÇ virtual ¼Ì³Ğ ...
+        // should åˆ†å¼€è®¾è®¡æ¥å£ æˆ–æ˜¯ virtual ç»§æ‰¿ ...
         int getValue1() const { return Derived1::getValue() ; }// ok ...
         void setValue1(int newValue) { Derived1::setValue(newValue) ; }
         int getValue2() const { return Derived2::getValue() ; }// ok ...
@@ -1208,7 +1208,7 @@ namespace testItem40
         int getValue() const { return getValue() ; }// okokok ...
         void setValue(int newValue)
         {
-            // setValue(newValue) ;  //1 ÆçÒå ...runtime error in GUN GCC ...
+            // setValue(newValue) ;  //1 æ­§ä¹‰ ...runtime error in GUN GCC ...
             Derived1_::setValue(newValue) ; // 2
             // or :Derived2_::setValue(newValue) ;//3
         }
@@ -1242,7 +1242,7 @@ namespace testItem40
         MP3Player mp3 ;
 //|error: request for member `checkOut' is ambiguous|
         //mp3.checkOut() ;
-//ÆçÒå ...£¬µ÷ÓÃÄÄ¸öcheckOut£ºBorrowableItem::checkOut ,ElectronicGadget::checkOut
+//æ­§ä¹‰ ...ï¼Œè°ƒç”¨å“ªä¸ªcheckOutï¼šBorrowableItem::checkOut ,ElectronicGadget::checkOut
         // should do that ....
         mp3.BorrowableItem::checkOut() ; // okokok ... public ...
         //mp3.ElectronicGadget::checkOut() ; // error ... private ...
@@ -1260,8 +1260,8 @@ namespace testItem40
     }
 
 
-// 3    ¶àÖØ¼Ì³ĞµÄÈ·ÓĞÕıµ±µÄÓÃÍ¾¡£ÆäÖĞÒ»¸öÇé½ÚÉæ¼°¡°public¼Ì³ĞÄ³¸öInterface class¡±ºÍ¡°private¼Ì³Ğ
-//      Ä³¸öĞ­ÖúÊµÏÖ class ¡±µÄÁ½Ïî×éºÏ
+// 3    å¤šé‡ç»§æ‰¿çš„ç¡®æœ‰æ­£å½“çš„ç”¨é€”ã€‚å…¶ä¸­ä¸€ä¸ªæƒ…èŠ‚æ¶‰åŠâ€œpublicç»§æ‰¿æŸä¸ªInterface classâ€å’Œâ€œprivateç»§æ‰¿
+//      æŸä¸ªååŠ©å®ç° class â€çš„ä¸¤é¡¹ç»„åˆ
     using testItem18::Date ;
     class IPerson
     {
@@ -1292,7 +1292,7 @@ namespace testItem40
     const char* PersonInfo::theName() const
     {
         #define MAX_LEN_NAME 100
-        //±£Áô»º³åÇø¸ø·µ»ØÖµÊ¹ÓÃ£»ÓÉÓÚ»º³åÇøÊÇstatic£¬Òò´Ë»á±»×Ô¶¯³õÊ¼»¯Îª¡°È«²¿Îª0¡±
+        //ä¿ç•™ç¼“å†²åŒºç»™è¿”å›å€¼ä½¿ç”¨ï¼›ç”±äºç¼“å†²åŒºæ˜¯staticï¼Œå› æ­¤ä¼šè¢«è‡ªåŠ¨åˆå§‹åŒ–ä¸ºâ€œå…¨éƒ¨ä¸º0â€
         static char value[MAX_LEN_NAME] ;
         //value[0] = '\0' ;
         std::strcpy(value ,valueDelimOpen() ) ;

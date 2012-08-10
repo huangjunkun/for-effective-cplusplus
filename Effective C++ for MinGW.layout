@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Unit1.h" open="1" top="0" tabpos="4">
+	<File name="Unit1.h" open="1" top="0" tabpos="2">
 		<Cursor position="15176" topLine="429" />
 	</File>
-	<File name="Unit2.h" open="1" top="0" tabpos="5">
+	<File name="Unit2.h" open="0" top="0" tabpos="5">
 		<Cursor position="11792" topLine="556" />
 	</File>
-	<File name="Unit3.h" open="1" top="0" tabpos="6">
-		<Cursor position="46201" topLine="1297" />
+	<File name="Unit3.h" open="0" top="0" tabpos="6">
+		<Cursor position="43181" topLine="1210" />
 	</File>
-	<File name="Unit4.h" open="1" top="1" tabpos="7">
-		<Cursor position="5412" topLine="145" />
+	<File name="Unit4.h" open="0" top="0" tabpos="7">
+		<Cursor position="14501" topLine="388" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="2572" topLine="8" />
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="2462" topLine="57" />
 	</File>
 </CodeBlocks_layout_file>
